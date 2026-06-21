@@ -1914,9 +1914,9 @@ module.espFuncl = function()
 				text.Text = v.Name
 				
 				local playerRole = PlayerRoles[v.Name]
-				module.Global.Roles[v.Name] = playerRole.Role
 				
 				if playerRole then
+					module.Global.Roles[v.Name] = playerRole.Role
 					local ROLE = playerRole.Role
 					if ROLE == "Sheriff" and IsAlive(playerRole) then
 						text.TextColor3 = Color3.fromRGB(0, 0, 225)
