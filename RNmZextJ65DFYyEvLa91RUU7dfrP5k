@@ -1660,10 +1660,10 @@ end
 
 
 local function getRole(plr)
+	local plr = plr or player
+	
 	local Registered = module.Global.Roles[plr.Name]
 	if not Registered then
-		local plr = plr or player
-
 		local event = ReplicatedStorage:FindFirstChild("GetPlayerData", true)
 		if not event then return end
 
