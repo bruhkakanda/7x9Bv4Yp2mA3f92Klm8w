@@ -1,7 +1,7 @@
 
 local G2L = {};
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["DisplayOrder"] = 1;
@@ -11,17 +11,17 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.LuaULoader
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.LuaULoader
 G2L["2"] = Instance.new("LocalScript", G2L["1"]);
 G2L["2"]["Name"] = [[LuaULoader]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator
 G2L["3"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["3"]["Name"] = [[creator]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification
 G2L["4"] = Instance.new("Frame", G2L["3"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -32,7 +32,7 @@ G2L["4"]["Name"] = [[Notification]];
 G2L["4"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.Move
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move
 G2L["5"] = Instance.new("Frame", G2L["4"]);
 G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -44,7 +44,7 @@ G2L["5"]["Name"] = [[Move]];
 G2L["5"]["BackgroundTransparency"] = 0.1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.Move.Text
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.Text
 G2L["6"] = Instance.new("TextLabel", G2L["5"]);
 G2L["6"]["TextWrapped"] = true;
 G2L["6"]["BorderSizePixel"] = 0;
@@ -62,18 +62,18 @@ G2L["6"]["Name"] = [[Text]];
 G2L["6"]["Position"] = UDim2.new(0.60838, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.Move.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.UICorner
 G2L["7"] = Instance.new("UICorner", G2L["5"]);
 G2L["7"]["CornerRadius"] = UDim.new(0.1, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.Move.UIStroke
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.UIStroke
 G2L["8"] = Instance.new("UIStroke", G2L["5"]);
 G2L["8"]["Thickness"] = 3;
 G2L["8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.Move.Icon
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.Icon
 G2L["9"] = Instance.new("ImageLabel", G2L["5"]);
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -86,17 +86,17 @@ G2L["9"]["Name"] = [[Icon]];
 G2L["9"]["Position"] = UDim2.new(0, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.Move.Icon.UIAspectRatioConstraint
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.Icon.UIAspectRatioConstraint
 G2L["a"] = Instance.new("UIAspectRatioConstraint", G2L["9"]);
 
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Notification.UIScale
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.UIScale
 G2L["b"] = Instance.new("UIScale", G2L["4"]);
 
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.TabButton
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton
 G2L["c"] = Instance.new("TextButton", G2L["3"]);
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["TextSize"] = 14;
@@ -110,17 +110,17 @@ G2L["c"]["Text"] = [[]];
 G2L["c"]["Name"] = [[TabButton]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.TabButton.UIAspectRatioConstraint
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.UIAspectRatioConstraint
 G2L["d"] = Instance.new("UIAspectRatioConstraint", G2L["c"]);
 
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.TabButton.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.UICorner
 G2L["e"] = Instance.new("UICorner", G2L["c"]);
 G2L["e"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.TabButton.UIStroke
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.UIStroke
 G2L["f"] = Instance.new("UIStroke", G2L["c"]);
 G2L["f"]["Thickness"] = 3;
 G2L["f"]["Color"] = Color3.fromRGB(57, 59, 69);
@@ -128,7 +128,7 @@ G2L["f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["f"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.TabButton.ImageLabel
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.ImageLabel
 G2L["10"] = Instance.new("ImageLabel", G2L["c"]);
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -140,7 +140,7 @@ G2L["10"]["BackgroundTransparency"] = 1;
 G2L["10"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic
 G2L["11"] = Instance.new("TextButton", G2L["3"]);
 G2L["11"]["BorderSizePixel"] = 0;
 G2L["11"]["TextSize"] = 14;
@@ -153,12 +153,12 @@ G2L["11"]["Text"] = [[]];
 G2L["11"]["Name"] = [[Classic]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.UICorner
 G2L["12"] = Instance.new("UICorner", G2L["11"]);
 G2L["12"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.UIStroke
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.UIStroke
 G2L["13"] = Instance.new("UIStroke", G2L["11"]);
 G2L["13"]["Thickness"] = 3;
 G2L["13"]["Color"] = Color3.fromRGB(57, 59, 69);
@@ -166,7 +166,7 @@ G2L["13"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["13"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Title
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Title
 G2L["14"] = Instance.new("TextLabel", G2L["11"]);
 G2L["14"]["TextWrapped"] = true;
 G2L["14"]["BorderSizePixel"] = 0;
@@ -184,7 +184,7 @@ G2L["14"]["Name"] = [[Title]];
 G2L["14"]["Position"] = UDim2.new(0, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Bar
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar
 G2L["15"] = Instance.new("Frame", G2L["11"]);
 G2L["15"]["Visible"] = false;
 G2L["15"]["BorderSizePixel"] = 0;
@@ -197,7 +197,7 @@ G2L["15"]["Name"] = [[Bar]];
 G2L["15"]["BackgroundTransparency"] = 0.75;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Bar.Key
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.Key
 G2L["16"] = Instance.new("TextLabel", G2L["15"]);
 G2L["16"]["TextWrapped"] = true;
 G2L["16"]["BorderSizePixel"] = 0;
@@ -215,7 +215,7 @@ G2L["16"]["Name"] = [[Key]];
 G2L["16"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Bar.Gap
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.Gap
 G2L["17"] = Instance.new("Frame", G2L["15"]);
 G2L["17"]["BorderSizePixel"] = 0;
 G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -227,12 +227,12 @@ G2L["17"]["Name"] = [[Gap]];
 G2L["17"]["LayoutOrder"] = -10;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Bar.Gap.UIGradient
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.Gap.UIGradient
 G2L["18"] = Instance.new("UIGradient", G2L["17"]);
 G2L["18"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Bar.TextButton
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.TextButton
 G2L["19"] = Instance.new("TextButton", G2L["15"]);
 G2L["19"]["BorderSizePixel"] = 0;
 G2L["19"]["TextSize"] = 14;
@@ -245,12 +245,12 @@ G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["Text"] = [[]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Classic.Bar.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.UICorner
 G2L["1a"] = Instance.new("UICorner", G2L["15"]);
 G2L["1a"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Tab
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab
 G2L["1b"] = Instance.new("ScrollingFrame", G2L["3"]);
 G2L["1b"]["Active"] = true;
 G2L["1b"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
@@ -265,14 +265,14 @@ G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1b"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Tab.UIListLayout
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.UIListLayout
 G2L["1c"] = Instance.new("UIListLayout", G2L["1b"]);
 G2L["1c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["1c"]["Padding"] = UDim.new(0.025, 0);
 G2L["1c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Tab.Gap
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.Gap
 G2L["1d"] = Instance.new("Frame", G2L["1b"]);
 G2L["1d"]["BorderSizePixel"] = 0;
 G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -282,12 +282,12 @@ G2L["1d"]["Name"] = [[Gap]];
 G2L["1d"]["LayoutOrder"] = -10;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Tab.Gap.UIGradient
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.Gap.UIGradient
 G2L["1e"] = Instance.new("UIGradient", G2L["1d"]);
 G2L["1e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Tab.Gap2
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.Gap2
 G2L["1f"] = Instance.new("Frame", G2L["1b"]);
 G2L["1f"]["BorderSizePixel"] = 0;
 G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -298,7 +298,7 @@ G2L["1f"]["LayoutOrder"] = 999;
 G2L["1f"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle
 G2L["20"] = Instance.new("TextButton", G2L["3"]);
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["TextSize"] = 14;
@@ -312,12 +312,12 @@ G2L["20"]["Name"] = [[Toggle]];
 G2L["20"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.UICorner
 G2L["21"] = Instance.new("UICorner", G2L["20"]);
 G2L["21"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle.UIStroke
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.UIStroke
 G2L["22"] = Instance.new("UIStroke", G2L["20"]);
 G2L["22"]["Thickness"] = 3;
 G2L["22"]["Color"] = Color3.fromRGB(57, 59, 69);
@@ -325,7 +325,7 @@ G2L["22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["22"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle.Title
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Title
 G2L["23"] = Instance.new("TextLabel", G2L["20"]);
 G2L["23"]["TextWrapped"] = true;
 G2L["23"]["BorderSizePixel"] = 0;
@@ -343,7 +343,7 @@ G2L["23"]["Name"] = [[Title]];
 G2L["23"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle.Bar
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Bar
 G2L["24"] = Instance.new("Frame", G2L["20"]);
 G2L["24"]["BorderSizePixel"] = 0;
 G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 162, 162);
@@ -353,17 +353,17 @@ G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["24"]["Name"] = [[Bar]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle.Bar.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Bar.UICorner
 G2L["25"] = Instance.new("UICorner", G2L["24"]);
 G2L["25"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Toggle.Bar.UIAspectRatioConstraint
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Bar.UIAspectRatioConstraint
 G2L["26"] = Instance.new("UIAspectRatioConstraint", G2L["24"]);
 
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.title
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.title
 G2L["27"] = Instance.new("TextLabel", G2L["3"]);
 G2L["27"]["TextWrapped"] = true;
 G2L["27"]["BorderSizePixel"] = 0;
@@ -379,7 +379,7 @@ G2L["27"]["Text"] = [[test]];
 G2L["27"]["Name"] = [[title]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind
 G2L["28"] = Instance.new("TextButton", G2L["3"]);
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["TextSize"] = 14;
@@ -393,12 +393,12 @@ G2L["28"]["Name"] = [[Keybind]];
 G2L["28"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.UICorner
 G2L["29"] = Instance.new("UICorner", G2L["28"]);
 G2L["29"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.UIStroke
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.UIStroke
 G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
 G2L["2a"]["Thickness"] = 3;
 G2L["2a"]["Color"] = Color3.fromRGB(57, 59, 69);
@@ -406,7 +406,7 @@ G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["2a"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.Title
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Title
 G2L["2b"] = Instance.new("TextLabel", G2L["28"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
@@ -424,7 +424,7 @@ G2L["2b"]["Name"] = [[Title]];
 G2L["2b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.Bar
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar
 G2L["2c"] = Instance.new("Frame", G2L["28"]);
 G2L["2c"]["BorderSizePixel"] = 0;
 G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -436,7 +436,7 @@ G2L["2c"]["Name"] = [[Bar]];
 G2L["2c"]["BackgroundTransparency"] = 0.75;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.Bar.Key
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.Key
 G2L["2d"] = Instance.new("TextLabel", G2L["2c"]);
 G2L["2d"]["TextWrapped"] = true;
 G2L["2d"]["BorderSizePixel"] = 0;
@@ -454,7 +454,7 @@ G2L["2d"]["Name"] = [[Key]];
 G2L["2d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.Bar.Gap
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.Gap
 G2L["2e"] = Instance.new("Frame", G2L["2c"]);
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -466,601 +466,686 @@ G2L["2e"]["Name"] = [[Gap]];
 G2L["2e"]["LayoutOrder"] = -10;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.Bar.Gap.UIGradient
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.Gap.UIGradient
 G2L["2f"] = Instance.new("UIGradient", G2L["2e"]);
 G2L["2f"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.creator.Keybind.Bar.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.UICorner
 G2L["30"] = Instance.new("UICorner", G2L["2c"]);
 G2L["30"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Lua
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua
 G2L["31"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["31"]["Name"] = [[Lua]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Lua.canLoad
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad
 G2L["32"] = Instance.new("Folder", G2L["31"]);
 G2L["32"]["Name"] = [[canLoad]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Lua.canLoad.66654135
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135
 G2L["33"] = Instance.new("ModuleScript", G2L["32"]);
 G2L["33"]["Name"] = [[66654135]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main
-G2L["34"] = Instance.new("Frame", G2L["1"]);
-G2L["34"]["Visible"] = false;
-G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["34"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["34"]["Size"] = UDim2.new(0.5, 0, 0.6, 0);
-G2L["34"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Name"] = [[Main]];
-G2L["34"]["BackgroundTransparency"] = 0.1;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721
+G2L["34"] = Instance.new("ModuleScript", G2L["32"]);
+G2L["34"]["Name"] = [[10317708721]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.UICorner
-G2L["35"] = Instance.new("UICorner", G2L["34"]);
-G2L["35"]["CornerRadius"] = UDim.new(0.025, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo
+G2L["35"] = Instance.new("Frame", G2L["34"]);
+G2L["35"]["Visible"] = false;
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Name"] = [[CoinInfo]];
+G2L["35"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.UIStroke
-G2L["36"] = Instance.new("UIStroke", G2L["34"]);
-G2L["36"]["Thickness"] = 3;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo.Status
+G2L["36"] = Instance.new("TextLabel", G2L["35"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["Size"] = UDim2.new(0.205, 0, 0.04, 0);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[Status: Collecting]];
+G2L["36"]["Name"] = [[Status]];
+G2L["36"]["Position"] = UDim2.new(0.78691, 0, 0, 44);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Topbar
-G2L["37"] = Instance.new("CanvasGroup", G2L["34"]);
-G2L["37"]["ZIndex"] = 2;
-G2L["37"]["BorderSizePixel"] = 0;
-G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Name"] = [[Topbar]];
-G2L["37"]["BackgroundTransparency"] = 1;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo.Status.UIStroke
+G2L["37"] = Instance.new("UIStroke", G2L["36"]);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Topbar.UICorner
-G2L["38"] = Instance.new("UICorner", G2L["37"]);
-G2L["38"]["CornerRadius"] = UDim.new(0.025, 0);
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo.Coins
+G2L["38"] = Instance.new("TextLabel", G2L["35"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["38"]["TextScaled"] = true;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["BackgroundTransparency"] = 1;
+G2L["38"]["Size"] = UDim2.new(0.205, 0, 0.04, 0);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[Collected: 1000]];
+G2L["38"]["Name"] = [[Coins]];
+G2L["38"]["Position"] = UDim2.new(0.78691, 0, 0.03899, 44);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Topbar.Main
-G2L["39"] = Instance.new("Frame", G2L["37"]);
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
-G2L["39"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Name"] = [[Main]];
-G2L["39"]["BackgroundTransparency"] = 0.5;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo.Coins.UIStroke
+G2L["39"] = Instance.new("UIStroke", G2L["38"]);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Topbar.Main.Title
-G2L["3a"] = Instance.new("TextLabel", G2L["39"]);
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo.Hour
+G2L["3a"] = Instance.new("TextLabel", G2L["35"]);
 G2L["3a"]["TextWrapped"] = true;
 G2L["3a"]["BorderSizePixel"] = 0;
 G2L["3a"]["TextSize"] = 14;
-G2L["3a"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["3a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["3a"]["TextScaled"] = true;
 G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3a"]["BackgroundTransparency"] = 1;
-G2L["3a"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["3a"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["3a"]["Size"] = UDim2.new(0.205, 0, 0.04, 0);
 G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Text"] = [[PatchKids™ 2]];
-G2L["3a"]["Name"] = [[Title]];
-G2L["3a"]["Position"] = UDim2.new(0.5, 0, -0, 0);
+G2L["3a"]["Text"] = [[100 coins per hour]];
+G2L["3a"]["Name"] = [[Hour]];
+G2L["3a"]["Position"] = UDim2.new(0.78691, 0, 0.07799, 44);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Topbar.Main.Version
-G2L["3b"] = Instance.new("TextLabel", G2L["39"]);
-G2L["3b"]["TextWrapped"] = true;
-G2L["3b"]["BorderSizePixel"] = 0;
-G2L["3b"]["TextSize"] = 14;
-G2L["3b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["3b"]["TextScaled"] = true;
-G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["BackgroundTransparency"] = 1;
-G2L["3b"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["3b"]["Size"] = UDim2.new(1, 0, 0.3, 0);
-G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["Text"] = [[v0.01]];
-G2L["3b"]["Name"] = [[Version]];
-G2L["3b"]["Position"] = UDim2.new(0.5, 0, 0.7, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.10317708721.CoinInfo.Hour.UIStroke
+G2L["3b"] = Instance.new("UIStroke", G2L["3a"]);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Topbar.Main.UIStroke
-G2L["3c"] = Instance.new("UIStroke", G2L["39"]);
-G2L["3c"]["Thickness"] = 3;
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main
+G2L["3c"] = Instance.new("Frame", G2L["1"]);
+G2L["3c"]["Visible"] = false;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["3c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["3c"]["Size"] = UDim2.new(0.5, 0, 0.6, 0);
+G2L["3c"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[Main]];
+G2L["3c"]["BackgroundTransparency"] = 0.1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List
-G2L["3d"] = Instance.new("Frame", G2L["34"]);
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["3d"]["Size"] = UDim2.new(1, 0, 0.825, 0);
-G2L["3d"]["Position"] = UDim2.new(0.5, 0, 1, 0);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Name"] = [[List]];
-G2L["3d"]["BackgroundTransparency"] = 1;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.UICorner
+G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+G2L["3d"]["CornerRadius"] = UDim.new(0.025, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.UIListLayout
-G2L["3e"] = Instance.new("UIListLayout", G2L["3d"]);
-G2L["3e"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["3e"]["Padding"] = UDim.new(0.025, 0);
-G2L["3e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.UIStroke
+G2L["3e"] = Instance.new("UIStroke", G2L["3c"]);
+G2L["3e"]["Thickness"] = 3;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Welcome
-G2L["3f"] = Instance.new("TextLabel", G2L["3d"]);
-G2L["3f"]["TextWrapped"] = true;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar
+G2L["3f"] = Instance.new("CanvasGroup", G2L["3c"]);
+G2L["3f"]["ZIndex"] = 2;
 G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["TextSize"] = 14;
-G2L["3f"]["TextScaled"] = true;
 G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["BackgroundTransparency"] = 1;
-G2L["3f"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["3f"]["Size"] = UDim2.new(0.63351, 0, 0.1, 0);
+G2L["3f"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Text"] = [[Welcome, Admin]];
-G2L["3f"]["LayoutOrder"] = -1;
-G2L["3f"]["Name"] = [[Welcome]];
-G2L["3f"]["Position"] = UDim2.new(0.5, 0, 0.09758, 0);
+G2L["3f"]["Name"] = [[Topbar]];
+G2L["3f"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Welcome.UIScale
-G2L["40"] = Instance.new("UIScale", G2L["3f"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.UICorner
+G2L["40"] = Instance.new("UICorner", G2L["3f"]);
+G2L["40"]["CornerRadius"] = UDim.new(0.025, 0);
 
 
-
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Note
-G2L["41"] = Instance.new("TextLabel", G2L["3d"]);
-G2L["41"]["TextWrapped"] = true;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main
+G2L["41"] = Instance.new("Frame", G2L["3f"]);
 G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["TextSize"] = 14;
-G2L["41"]["TextScaled"] = true;
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["41"]["TextColor3"] = Color3.fromRGB(153, 163, 255);
-G2L["41"]["BackgroundTransparency"] = 1;
-G2L["41"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["41"]["Size"] = UDim2.new(0.63351, 0, 0.1, 0);
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["41"]["Size"] = UDim2.new(1, 0, 0.15, 0);
 G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Text"] = [[Ready to enhance your experience?]];
-G2L["41"]["Name"] = [[Note]];
-G2L["41"]["Position"] = UDim2.new(0.5, 0, 0.24793, 0);
+G2L["41"]["Name"] = [[Main]];
+G2L["41"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Note.UIScale
-G2L["42"] = Instance.new("UIScale", G2L["41"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main.Title
+G2L["42"] = Instance.new("TextLabel", G2L["41"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["42"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[PatchKids™ 2]];
+G2L["42"]["Name"] = [[Title]];
+G2L["42"]["Position"] = UDim2.new(0.5, 0, -0, 0);
 
 
-
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Enter
-G2L["43"] = Instance.new("TextButton", G2L["3d"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main.Version
+G2L["43"] = Instance.new("TextLabel", G2L["41"]);
 G2L["43"]["TextWrapped"] = true;
-G2L["43"]["TextStrokeTransparency"] = 0;
 G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["TextStrokeColor3"] = Color3.fromRGB(85, 85, 85);
-G2L["43"]["TextSize"] = 60;
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["43"]["TextScaled"] = true;
-G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
 G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["43"]["Size"] = UDim2.new(0.24782, 0, 0.1, 0);
-G2L["43"]["LayoutOrder"] = 4;
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["BackgroundTransparency"] = 1;
+G2L["43"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["43"]["Size"] = UDim2.new(1, 0, 0.3, 0);
 G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["Text"] = [[]];
-G2L["43"]["Name"] = [[Enter]];
-G2L["43"]["Position"] = UDim2.new(0.37609, 0, 0.55317, 0);
+G2L["43"]["Text"] = [[v0.01]];
+G2L["43"]["Name"] = [[Version]];
+G2L["43"]["Position"] = UDim2.new(0.5, 0, 0.7, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Enter.UICorner
-G2L["44"] = Instance.new("UICorner", G2L["43"]);
-G2L["44"]["CornerRadius"] = UDim.new(0.1, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main.UIStroke
+G2L["44"] = Instance.new("UIStroke", G2L["41"]);
+G2L["44"]["Thickness"] = 3;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Enter.TextLabel
-G2L["45"] = Instance.new("TextLabel", G2L["43"]);
-G2L["45"]["TextWrapped"] = true;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List
+G2L["45"] = Instance.new("Frame", G2L["3c"]);
 G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["TextSize"] = 14;
-G2L["45"]["TextScaled"] = true;
 G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["BackgroundTransparency"] = 1;
-G2L["45"]["Size"] = UDim2.new(1, 0, 0.69767, 0);
+G2L["45"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["45"]["Size"] = UDim2.new(1, 0, 0.825, 0);
+G2L["45"]["Position"] = UDim2.new(0.5, 0, 1, 0);
 G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Text"] = [[Verify]];
-G2L["45"]["Position"] = UDim2.new(0, 0, 0.13953, 0);
+G2L["45"]["Name"] = [[List]];
+G2L["45"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Enter.TextLabel.UIStroke
-G2L["46"] = Instance.new("UIStroke", G2L["45"]);
-G2L["46"]["Thickness"] = 2;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.UIListLayout
+G2L["46"] = Instance.new("UIListLayout", G2L["45"]);
+G2L["46"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["46"]["Padding"] = UDim.new(0.025, 0);
+G2L["46"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Enter.UIStroke
-G2L["47"] = Instance.new("UIStroke", G2L["43"]);
-G2L["47"]["Thickness"] = 2;
-G2L["47"]["Color"] = Color3.fromRGB(11, 11, 11);
-G2L["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Welcome
+G2L["47"] = Instance.new("TextLabel", G2L["45"]);
+G2L["47"]["TextWrapped"] = true;
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["TextSize"] = 14;
+G2L["47"]["TextScaled"] = true;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["47"]["Size"] = UDim2.new(0.63351, 0, 0.1, 0);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Text"] = [[Welcome, Admin]];
+G2L["47"]["LayoutOrder"] = -1;
+G2L["47"]["Name"] = [[Welcome]];
+G2L["47"]["Position"] = UDim2.new(0.5, 0, 0.09758, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Enter.Gradient
-G2L["48"] = Instance.new("UIGradient", G2L["43"]);
-G2L["48"]["Rotation"] = 45;
-G2L["48"]["Name"] = [[Gradient]];
-G2L["48"]["Offset"] = Vector2.new(-1, 0);
-G2L["48"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(59, 255, 72)),ColorSequenceKeypoint.new(0.652, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(59, 255, 72))};
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Welcome.UIScale
+G2L["48"] = Instance.new("UIScale", G2L["47"]);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Key
-G2L["49"] = Instance.new("TextBox", G2L["3d"]);
-G2L["49"]["Name"] = [[Key]];
-G2L["49"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["49"]["BorderSizePixel"] = 0;
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Note
+G2L["49"] = Instance.new("TextLabel", G2L["45"]);
 G2L["49"]["TextWrapped"] = true;
+G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["TextSize"] = 14;
-G2L["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["49"]["TextScaled"] = true;
-G2L["49"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["49"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["49"]["PlaceholderText"] = [[Enter access key]];
-G2L["49"]["Size"] = UDim2.new(0.41885, 0, 0.1, 0);
-G2L["49"]["Position"] = UDim2.new(0.5, 0, 0.38649, 0);
-G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Text"] = [[]];
-G2L["49"]["LayoutOrder"] = 2;
+G2L["49"]["TextColor3"] = Color3.fromRGB(153, 163, 255);
 G2L["49"]["BackgroundTransparency"] = 1;
+G2L["49"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["49"]["Size"] = UDim2.new(0.63351, 0, 0.1, 0);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Text"] = [[Ready to enhance your experience?]];
+G2L["49"]["Name"] = [[Note]];
+G2L["49"]["Position"] = UDim2.new(0.5, 0, 0.24793, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Fetch
-G2L["4a"] = Instance.new("Frame", G2L["3d"]);
-G2L["4a"]["Visible"] = false;
-G2L["4a"]["Size"] = UDim2.new(1, 0, 0.1, 0);
-G2L["4a"]["Position"] = UDim2.new(-0, 0, 0.53838, 0);
-G2L["4a"]["Name"] = [[Fetch]];
-G2L["4a"]["LayoutOrder"] = 3;
-G2L["4a"]["BackgroundTransparency"] = 1;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Note.UIScale
+G2L["4a"] = Instance.new("UIScale", G2L["49"]);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Fetch.Icon
-G2L["4b"] = Instance.new("TextLabel", G2L["4a"]);
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter
+G2L["4b"] = Instance.new("TextButton", G2L["45"]);
 G2L["4b"]["TextWrapped"] = true;
+G2L["4b"]["TextStrokeTransparency"] = 0;
 G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["TextSize"] = 18;
+G2L["4b"]["TextStrokeColor3"] = Color3.fromRGB(85, 85, 85);
+G2L["4b"]["TextSize"] = 60;
 G2L["4b"]["TextScaled"] = true;
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 31);
-G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4b"]["TextColor3"] = Color3.fromRGB(46, 252, 111);
-G2L["4b"]["BackgroundTransparency"] = 1;
-G2L["4b"]["Size"] = UDim2.new(0.06, 0, 0.7, 0);
-G2L["4b"]["Text"] = [[✓]];
-G2L["4b"]["Name"] = [[Icon]];
+G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4b"]["Size"] = UDim2.new(0.24782, 0, 0.1, 0);
+G2L["4b"]["LayoutOrder"] = 4;
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[]];
+G2L["4b"]["Name"] = [[Enter]];
+G2L["4b"]["Position"] = UDim2.new(0.37609, 0, 0.55317, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Fetch.Icon.UICorner
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.UICorner
 G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
+G2L["4c"]["CornerRadius"] = UDim.new(0.1, 0);
 
 
-
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Fetch.txt
-G2L["4d"] = Instance.new("TextLabel", G2L["4a"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.TextLabel
+G2L["4d"] = Instance.new("TextLabel", G2L["4b"]);
 G2L["4d"]["TextWrapped"] = true;
-G2L["4d"]["TextSize"] = 13;
-G2L["4d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4d"]["TextTransparency"] = 0.25;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextSize"] = 14;
 G2L["4d"]["TextScaled"] = true;
-G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4d"]["BackgroundTransparency"] = 1;
-G2L["4d"]["Size"] = UDim2.new(0.46863, -46, 1, 0);
-G2L["4d"]["Text"] = [[Fetching whitelist...]];
-G2L["4d"]["Name"] = [[txt]];
-G2L["4d"]["Position"] = UDim2.new(0, 219, 0, 0);
+G2L["4d"]["Size"] = UDim2.new(1, 0, 0.69767, 0);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Text"] = [[Verify]];
+G2L["4d"]["Position"] = UDim2.new(0, 0, 0.13953, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Fetch.UIListLayout
-G2L["4e"] = Instance.new("UIListLayout", G2L["4a"]);
-G2L["4e"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["4e"]["Padding"] = UDim.new(0.02, 0);
-G2L["4e"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
-G2L["4e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["4e"]["FillDirection"] = Enum.FillDirection.Horizontal;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.TextLabel.UIStroke
+G2L["4e"] = Instance.new("UIStroke", G2L["4d"]);
+G2L["4e"]["Thickness"] = 2;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Line
-G2L["4f"] = Instance.new("Frame", G2L["3d"]);
-G2L["4f"]["BorderSizePixel"] = 0;
-G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["Size"] = UDim2.new(0.4, 0, 0, 1);
-G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4f"]["Name"] = [[Line]];
-G2L["4f"]["LayoutOrder"] = 3;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.UIStroke
+G2L["4f"] = Instance.new("UIStroke", G2L["4b"]);
+G2L["4f"]["Thickness"] = 2;
+G2L["4f"]["Color"] = Color3.fromRGB(11, 11, 11);
+G2L["4f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Line.UIGradient
-G2L["50"] = Instance.new("UIGradient", G2L["4f"]);
-G2L["50"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.Gradient
+G2L["50"] = Instance.new("UIGradient", G2L["4b"]);
+G2L["50"]["Rotation"] = 45;
+G2L["50"]["Name"] = [[Gradient]];
+G2L["50"]["Offset"] = Vector2.new(-1, 0);
+G2L["50"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(59, 255, 72)),ColorSequenceKeypoint.new(0.652, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(59, 255, 72))};
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.List.Barrier
-G2L["51"] = Instance.new("Frame", G2L["3d"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Key
+G2L["51"] = Instance.new("TextBox", G2L["45"]);
+G2L["51"]["Name"] = [[Key]];
+G2L["51"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
 G2L["51"]["BorderSizePixel"] = 0;
-G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["51"]["Size"] = UDim2.new(0.4, 0, 0.3, 0);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["TextSize"] = 14;
+G2L["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["TextScaled"] = true;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["51"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["51"]["PlaceholderText"] = [[Enter access key]];
+G2L["51"]["Size"] = UDim2.new(0.41885, 0, 0.1, 0);
+G2L["51"]["Position"] = UDim2.new(0.5, 0, 0.38649, 0);
 G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["Name"] = [[Barrier]];
-G2L["51"]["LayoutOrder"] = 5;
+G2L["51"]["Text"] = [[]];
+G2L["51"]["LayoutOrder"] = 2;
 G2L["51"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.UIAspectRatioConstraint
-G2L["52"] = Instance.new("UIAspectRatioConstraint", G2L["34"]);
-G2L["52"]["AspectRatio"] = 1.5;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch
+G2L["52"] = Instance.new("Frame", G2L["45"]);
+G2L["52"]["Visible"] = false;
+G2L["52"]["Size"] = UDim2.new(1, 0, 0.1, 0);
+G2L["52"]["Position"] = UDim2.new(-0, 0, 0.53838, 0);
+G2L["52"]["Name"] = [[Fetch]];
+G2L["52"]["LayoutOrder"] = 3;
+G2L["52"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Note2
-G2L["53"] = Instance.new("TextLabel", G2L["34"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.Icon
+G2L["53"] = Instance.new("TextLabel", G2L["52"]);
 G2L["53"]["TextWrapped"] = true;
 G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["TextSize"] = 14;
+G2L["53"]["TextSize"] = 18;
 G2L["53"]["TextScaled"] = true;
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["53"]["TextColor3"] = Color3.fromRGB(192, 192, 192);
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 31);
+G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["53"]["TextColor3"] = Color3.fromRGB(46, 252, 111);
 G2L["53"]["BackgroundTransparency"] = 1;
-G2L["53"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["53"]["Size"] = UDim2.new(0.63351, 0, 0.075, 0);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Text"] = [[PatchKids™ Early Access]];
-G2L["53"]["LayoutOrder"] = 10;
-G2L["53"]["Name"] = [[Note2]];
-G2L["53"]["Position"] = UDim2.new(0.5, 0, 0.98, 0);
+G2L["53"]["Size"] = UDim2.new(0.06, 0, 0.7, 0);
+G2L["53"]["Text"] = [[✓]];
+G2L["53"]["Name"] = [[Icon]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Main.Note2.UIScale
-G2L["54"] = Instance.new("UIScale", G2L["53"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.Icon.UICorner
+G2L["54"] = Instance.new("UICorner", G2L["53"]);
 
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Notifications
-G2L["55"] = Instance.new("Frame", G2L["1"]);
-G2L["55"]["BorderSizePixel"] = 0;
-G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["AnchorPoint"] = Vector2.new(1, 1);
-G2L["55"]["Size"] = UDim2.new(0.2, 0, 0.2, 0);
-G2L["55"]["Position"] = UDim2.new(1, 0, 1, 0);
-G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["55"]["Name"] = [[Notifications]];
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.txt
+G2L["55"] = Instance.new("TextLabel", G2L["52"]);
+G2L["55"]["TextWrapped"] = true;
+G2L["55"]["TextSize"] = 13;
+G2L["55"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["55"]["TextTransparency"] = 0.25;
+G2L["55"]["TextScaled"] = true;
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["55"]["BackgroundTransparency"] = 1;
+G2L["55"]["Size"] = UDim2.new(0.46863, -46, 1, 0);
+G2L["55"]["Text"] = [[Fetching whitelist...]];
+G2L["55"]["Name"] = [[txt]];
+G2L["55"]["Position"] = UDim2.new(0, 219, 0, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Notifications.UIListLayout
-G2L["56"] = Instance.new("UIListLayout", G2L["55"]);
-G2L["56"]["Padding"] = UDim.new(0.1, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.UIListLayout
+G2L["56"] = Instance.new("UIListLayout", G2L["52"]);
+G2L["56"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["56"]["Padding"] = UDim.new(0.02, 0);
+G2L["56"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
 G2L["56"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["56"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Sounds
-G2L["57"] = Instance.new("Folder", G2L["1"]);
-G2L["57"]["Name"] = [[Sounds]];
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Line
+G2L["57"] = Instance.new("Frame", G2L["45"]);
+G2L["57"]["BorderSizePixel"] = 0;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["57"]["Size"] = UDim2.new(0.4, 0, 0, 1);
+G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["57"]["Name"] = [[Line]];
+G2L["57"]["LayoutOrder"] = 3;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game
-G2L["58"] = Instance.new("Frame", G2L["1"]);
-G2L["58"]["Visible"] = false;
-G2L["58"]["BorderSizePixel"] = 0;
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["58"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["58"]["Size"] = UDim2.new(0.5, 0, 0.6, 0);
-G2L["58"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Name"] = [[Game]];
-G2L["58"]["BackgroundTransparency"] = 0.1;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Line.UIGradient
+G2L["58"] = Instance.new("UIGradient", G2L["57"]);
+G2L["58"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.UICorner
-G2L["59"] = Instance.new("UICorner", G2L["58"]);
-G2L["59"]["CornerRadius"] = UDim.new(0.025, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Barrier
+G2L["59"] = Instance.new("Frame", G2L["45"]);
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["Size"] = UDim2.new(0.4, 0, 0.3, 0);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Name"] = [[Barrier]];
+G2L["59"]["LayoutOrder"] = 5;
+G2L["59"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.UIStroke
-G2L["5a"] = Instance.new("UIStroke", G2L["58"]);
-G2L["5a"]["Thickness"] = 3;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.UIAspectRatioConstraint
+G2L["5a"] = Instance.new("UIAspectRatioConstraint", G2L["3c"]);
+G2L["5a"]["AspectRatio"] = 1.5;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar
-G2L["5b"] = Instance.new("CanvasGroup", G2L["58"]);
-G2L["5b"]["ZIndex"] = 2;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Note2
+G2L["5b"] = Instance.new("TextLabel", G2L["3c"]);
+G2L["5b"]["TextWrapped"] = true;
 G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["TextSize"] = 14;
+G2L["5b"]["TextScaled"] = true;
 G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5b"]["Name"] = [[Topbar]];
+G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5b"]["TextColor3"] = Color3.fromRGB(192, 192, 192);
 G2L["5b"]["BackgroundTransparency"] = 1;
+G2L["5b"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["5b"]["Size"] = UDim2.new(0.63351, 0, 0.075, 0);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Text"] = [[PatchKids™ Early Access]];
+G2L["5b"]["LayoutOrder"] = 10;
+G2L["5b"]["Name"] = [[Note2]];
+G2L["5b"]["Position"] = UDim2.new(0.5, 0, 0.98, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.UICorner
-G2L["5c"] = Instance.new("UICorner", G2L["5b"]);
-G2L["5c"]["CornerRadius"] = UDim.new(0.025, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Note2.UIScale
+G2L["5c"] = Instance.new("UIScale", G2L["5b"]);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main
-G2L["5d"] = Instance.new("Frame", G2L["5b"]);
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Notifications
+G2L["5d"] = Instance.new("Frame", G2L["1"]);
 G2L["5d"]["BorderSizePixel"] = 0;
-G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
-G2L["5d"]["Size"] = UDim2.new(1, 0, 0.11427, 0);
-G2L["5d"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["AnchorPoint"] = Vector2.new(1, 1);
+G2L["5d"]["Size"] = UDim2.new(0.2, 0, 0.2, 0);
+G2L["5d"]["Position"] = UDim2.new(1, 0, 1, 0);
 G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5d"]["Name"] = [[Main]];
-G2L["5d"]["BackgroundTransparency"] = 0.5;
+G2L["5d"]["Name"] = [[Notifications]];
+G2L["5d"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Title
-G2L["5e"] = Instance.new("TextLabel", G2L["5d"]);
-G2L["5e"]["TextWrapped"] = true;
-G2L["5e"]["BorderSizePixel"] = 0;
-G2L["5e"]["TextSize"] = 14;
-G2L["5e"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
-G2L["5e"]["TextScaled"] = true;
-G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["BackgroundTransparency"] = 1;
-G2L["5e"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["5e"]["Size"] = UDim2.new(1, 0, 0.7, 0);
-G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["Text"] = [[PatchKids™ 2]];
-G2L["5e"]["Name"] = [[Title]];
-G2L["5e"]["Position"] = UDim2.new(0.5, 0, -0, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Notifications.UIListLayout
+G2L["5e"] = Instance.new("UIListLayout", G2L["5d"]);
+G2L["5e"]["Padding"] = UDim.new(0.1, 0);
+G2L["5e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Version
-G2L["5f"] = Instance.new("TextLabel", G2L["5d"]);
-G2L["5f"]["TextWrapped"] = true;
-G2L["5f"]["BorderSizePixel"] = 0;
-G2L["5f"]["TextSize"] = 14;
-G2L["5f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["5f"]["TextScaled"] = true;
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["BackgroundTransparency"] = 1;
-G2L["5f"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["5f"]["Size"] = UDim2.new(1, 0, 0.3, 0);
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[v0.01]];
-G2L["5f"]["Name"] = [[Version]];
-G2L["5f"]["Position"] = UDim2.new(0.5, 0, 0.7, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Sounds
+G2L["5f"] = Instance.new("Folder", G2L["1"]);
+G2L["5f"]["Name"] = [[Sounds]];
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.UIStroke
-G2L["60"] = Instance.new("UIStroke", G2L["5d"]);
-G2L["60"]["Thickness"] = 3;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game
+G2L["60"] = Instance.new("Frame", G2L["1"]);
+G2L["60"]["Visible"] = false;
+G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["60"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["60"]["Size"] = UDim2.new(0.5, 0, 0.6, 0);
+G2L["60"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["Name"] = [[Game]];
+G2L["60"]["BackgroundTransparency"] = 0.1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Close
-G2L["61"] = Instance.new("TextButton", G2L["5d"]);
-G2L["61"]["BorderSizePixel"] = 0;
-G2L["61"]["TextSize"] = 14;
-G2L["61"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 98, 93);
-G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["61"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["61"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
-G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["61"]["Text"] = [[]];
-G2L["61"]["Name"] = [[Close]];
-G2L["61"]["Position"] = UDim2.new(0.955, 0, 0.5, 0);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.UICorner
+G2L["61"] = Instance.new("UICorner", G2L["60"]);
+G2L["61"]["CornerRadius"] = UDim.new(0.025, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Close.UIAspectRatioConstraint
-G2L["62"] = Instance.new("UIAspectRatioConstraint", G2L["61"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.UIStroke
+G2L["62"] = Instance.new("UIStroke", G2L["60"]);
+G2L["62"]["Thickness"] = 3;
 
 
-
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Close.UICorner
-G2L["63"] = Instance.new("UICorner", G2L["61"]);
-G2L["63"]["CornerRadius"] = UDim.new(0.2, 0);
-
-
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Close.UIStroke
-G2L["64"] = Instance.new("UIStroke", G2L["61"]);
-G2L["64"]["Thickness"] = 3;
-G2L["64"]["Color"] = Color3.fromRGB(157, 59, 57);
-G2L["64"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["64"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar
+G2L["63"] = Instance.new("CanvasGroup", G2L["60"]);
+G2L["63"]["ZIndex"] = 2;
+G2L["63"]["BorderSizePixel"] = 0;
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["63"]["Name"] = [[Topbar]];
+G2L["63"]["BackgroundTransparency"] = 1;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Main.Close.ImageLabel
-G2L["65"] = Instance.new("ImageLabel", G2L["61"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.UICorner
+G2L["64"] = Instance.new("UICorner", G2L["63"]);
+G2L["64"]["CornerRadius"] = UDim.new(0.025, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main
+G2L["65"] = Instance.new("Frame", G2L["63"]);
 G2L["65"]["BorderSizePixel"] = 0;
-G2L["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["65"]["Image"] = [[rbxassetid://107435544084720]];
-G2L["65"]["Size"] = UDim2.new(0.8, 0, 0.8, 0);
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["65"]["Size"] = UDim2.new(1, 0, 0.11427, 0);
+G2L["65"]["Position"] = UDim2.new(0, 0, 0, 0);
 G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["65"]["BackgroundTransparency"] = 1;
-G2L["65"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["65"]["Name"] = [[Main]];
+G2L["65"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Tabs
-G2L["66"] = Instance.new("ScrollingFrame", G2L["5b"]);
-G2L["66"]["Active"] = true;
-G2L["66"]["ScrollingDirection"] = Enum.ScrollingDirection.X;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Title
+G2L["66"] = Instance.new("TextLabel", G2L["65"]);
+G2L["66"]["TextWrapped"] = true;
 G2L["66"]["BorderSizePixel"] = 0;
-G2L["66"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["66"]["Name"] = [[Tabs]];
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["66"]["TextScaled"] = true;
 G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
-G2L["66"]["ClipsDescendants"] = false;
-G2L["66"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["66"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["66"]["Position"] = UDim2.new(0, 0, 0.11349, 0);
-G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["66"]["BackgroundTransparency"] = 1;
+G2L["66"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["66"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Text"] = [[PatchKids™ 2]];
+G2L["66"]["Name"] = [[Title]];
+G2L["66"]["Position"] = UDim2.new(0.5, 0, -0, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Topbar.Tabs.UIListLayout
-G2L["67"] = Instance.new("UIListLayout", G2L["66"]);
-G2L["67"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["67"]["Padding"] = UDim.new(0.02, 0);
-G2L["67"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
-G2L["67"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["67"]["FillDirection"] = Enum.FillDirection.Horizontal;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Version
+G2L["67"] = Instance.new("TextLabel", G2L["65"]);
+G2L["67"]["TextWrapped"] = true;
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["TextSize"] = 14;
+G2L["67"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["67"]["TextScaled"] = true;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["BackgroundTransparency"] = 1;
+G2L["67"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["67"]["Size"] = UDim2.new(1, 0, 0.3, 0);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Text"] = [[v0.01]];
+G2L["67"]["Name"] = [[Version]];
+G2L["67"]["Position"] = UDim2.new(0.5, 0, 0.7, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.UIAspectRatioConstraint
-G2L["68"] = Instance.new("UIAspectRatioConstraint", G2L["58"]);
-G2L["68"]["AspectRatio"] = 1.5;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.UIStroke
+G2L["68"] = Instance.new("UIStroke", G2L["65"]);
+G2L["68"]["Thickness"] = 3;
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Note2
-G2L["69"] = Instance.new("TextLabel", G2L["58"]);
-G2L["69"]["TextWrapped"] = true;
-G2L["69"]["ZIndex"] = 2;
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close
+G2L["69"] = Instance.new("TextButton", G2L["65"]);
 G2L["69"]["BorderSizePixel"] = 0;
 G2L["69"]["TextSize"] = 14;
-G2L["69"]["TextScaled"] = true;
-G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["69"]["TextColor3"] = Color3.fromRGB(192, 192, 192);
-G2L["69"]["BackgroundTransparency"] = 1;
-G2L["69"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["69"]["Size"] = UDim2.new(0.63351, 0, 0.075, 0);
+G2L["69"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 98, 93);
+G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["69"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["69"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
 G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["Text"] = [[PatchKids™ Early Access]];
-G2L["69"]["LayoutOrder"] = 10;
-G2L["69"]["Name"] = [[Note2]];
-G2L["69"]["Position"] = UDim2.new(0.5, 0, 0.98, 0);
+G2L["69"]["Text"] = [[]];
+G2L["69"]["Name"] = [[Close]];
+G2L["69"]["Position"] = UDim2.new(0.955, 0, 0.5, 0);
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Note2.UIScale
-G2L["6a"] = Instance.new("UIScale", G2L["69"]);
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.UIAspectRatioConstraint
+G2L["6a"] = Instance.new("UIAspectRatioConstraint", G2L["69"]);
 
 
 
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.Game.Tabs
-G2L["6b"] = Instance.new("Folder", G2L["58"]);
-G2L["6b"]["Name"] = [[Tabs]];
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.UICorner
+G2L["6b"] = Instance.new("UICorner", G2L["69"]);
+G2L["6b"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.UIStroke
+G2L["6c"] = Instance.new("UIStroke", G2L["69"]);
+G2L["6c"]["Thickness"] = 3;
+G2L["6c"]["Color"] = Color3.fromRGB(157, 59, 57);
+G2L["6c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["6c"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.ImageLabel
+G2L["6d"] = Instance.new("ImageLabel", G2L["69"]);
+G2L["6d"]["BorderSizePixel"] = 0;
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["6d"]["Image"] = [[rbxassetid://107435544084720]];
+G2L["6d"]["Size"] = UDim2.new(0.8, 0, 0.8, 0);
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["BackgroundTransparency"] = 1;
+G2L["6d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Tabs
+G2L["6e"] = Instance.new("ScrollingFrame", G2L["63"]);
+G2L["6e"]["Active"] = true;
+G2L["6e"]["ScrollingDirection"] = Enum.ScrollingDirection.X;
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["6e"]["Name"] = [[Tabs]];
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
+G2L["6e"]["ClipsDescendants"] = false;
+G2L["6e"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["6e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Position"] = UDim2.new(0, 0, 0.11349, 0);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Tabs.UIListLayout
+G2L["6f"] = Instance.new("UIListLayout", G2L["6e"]);
+G2L["6f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["6f"]["Padding"] = UDim.new(0.02, 0);
+G2L["6f"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["6f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["6f"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.UIAspectRatioConstraint
+G2L["70"] = Instance.new("UIAspectRatioConstraint", G2L["60"]);
+G2L["70"]["AspectRatio"] = 1.5;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Note2
+G2L["71"] = Instance.new("TextLabel", G2L["60"]);
+G2L["71"]["TextWrapped"] = true;
+G2L["71"]["ZIndex"] = 2;
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["TextSize"] = 14;
+G2L["71"]["TextScaled"] = true;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["71"]["TextColor3"] = Color3.fromRGB(192, 192, 192);
+G2L["71"]["BackgroundTransparency"] = 1;
+G2L["71"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["71"]["Size"] = UDim2.new(0.63351, 0, 0.075, 0);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["Text"] = [[PatchKids™ Early Access]];
+G2L["71"]["LayoutOrder"] = 10;
+G2L["71"]["Name"] = [[Note2]];
+G2L["71"]["Position"] = UDim2.new(0.5, 0, 0.98, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Note2.UIScale
+G2L["72"] = Instance.new("UIScale", G2L["71"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Tabs
+G2L["73"] = Instance.new("Folder", G2L["60"]);
+G2L["73"]["Name"] = [[Tabs]];
 
 
 -- Require G2L wrapper
@@ -1426,16 +1511,18 @@ local ui = creator.GetHUD()
 
 module.RemoveOtherAssets = function(ignore)
 	for _, v in folder:GetChildren() do
-		if v.Name == ignore then continue end
+		if v == ignore then continue end
 		v:Destroy()
 	end
 end
 
 module.BeginLoadingGame = function()
 	local this = game.GameId
-	local gameModule = require(folder:FindFirstChild(this))
+	if not folder:FindFirstChild(this) then return end
 	
-	module.RemoveOtherAssets(this)
+	local gameModule = require(folder:FindFirstChild(this))
+
+	module.RemoveOtherAssets(folder:FindFirstChild(this))
 	gameModule.Load(creator)
 end
 
@@ -1997,7 +2084,738 @@ return module
 
 end;
 };
--- StarterPlayer.StarterPlayerScripts._.RobloxVolDeafen.8F9n2PqW4.LuaULoader
+G2L_MODULES[G2L["34"]] = {
+Closure = function()
+    local script = G2L["34"];local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local PathfindingService = game:GetService("PathfindingService")
+
+local player = Players.LocalPlayer
+
+local module = {}
+module.creator = require(script.Parent.Parent.Parent.creator)
+module.Receiver = Instance.new("BindableEvent")
+module.HUD = nil
+
+module.Global = {
+	using = false;
+	espToggle = false;
+	gunDropToggle = false;
+	
+	coinAutofarm = false;
+	
+	Roles = {}
+}
+
+module.Load = function(creator)
+	module.creator = creator
+	module.HUD = creator.GetHUD()
+	
+	module.Receiver:Fire()
+end
+
+local function predictFormula(targetPart, playerPing)
+	return targetPart.Position + (targetPart.Velocity * playerPing)
+end
+
+local function getClosestPlayer()
+	local character    = player.Character
+	if not character then return nil end
+
+	local root            = character:WaitForChild("HumanoidRootPart")
+	local closestPlayer   = nil
+	local closestDistance = math.huge
+
+	for _, player in Players:GetPlayers() do
+		if player ~= player and player.Character then
+			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+			local hrp      = player.Character:FindFirstChild("HumanoidRootPart")
+			if humanoid and hrp and humanoid.Health > 0 then
+				local distance = (hrp.Position - root.Position).Magnitude
+				if distance < closestDistance then
+					closestDistance = distance
+					closestPlayer   = player
+				end
+			end
+		end
+	end
+
+	return closestPlayer, closestDistance
+end
+
+
+local function getRole(plr)
+	local plr = plr or player
+	
+	local Registered = module.Global.Roles[plr.Name]
+	if not Registered then
+		local event = ReplicatedStorage:FindFirstChild("GetPlayerData", true)
+		if not event then return end
+
+		local roles = event:InvokeServer()
+		local playerRole = roles[plr.Name]
+		if not playerRole then return end
+
+		return playerRole.Role
+	end
+	
+	return Registered
+end
+
+local function getMurderer()
+	for _, plr in Players:GetPlayers() do
+		local role = getRole(plr)
+		if role == "Murderer" then
+			return plr
+		end
+	end
+end
+
+local function grab_gun()	
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gunDrop = workspace:FindFirstChild("GunDrop", true)
+	
+	if not gunDrop then module.creator.Notification("GunDrop not found") return end
+	if getRole() ~= "Innocent" then module.creator.Notification("You aren't Innocent") return end
+	
+	firetouchinterest(character.PrimaryPart, gunDrop, 0)
+end
+
+module.Receiver.Event:Connect(function()
+	local creator = module.creator
+	module.Receiver:Destroy()
+	
+	creator.PlaySound(128629124431651)
+	
+	-- TABS --
+	local tab = creator.NewTab("main", 84943932817353, 1)
+	tab.Visible = false
+	
+	-- BUTTONS --
+	local esp
+	local gundrop
+	
+	local grabgun
+	local silentShoot
+	local tpShootMurderer
+	
+	local killClosest
+	local killAll
+	
+	local coinAutofarm
+	
+	-- Visuals --
+	creator.NewTitle("Visuals", "main")
+	
+	esp = creator.NewToggle("player esp", "main", function()
+		local value = esp:GetAttribute("toggle")
+		module.Global.espToggle = value
+	end)
+	
+	gundrop = creator.NewToggle("gundrop esp", "main", function()
+		local value = gundrop:GetAttribute("toggle")
+		module.Global.gunDropToggle = value
+	end)
+	
+	-- Sheriff --
+	creator.NewTitle("Sheriff", "main")
+	
+	grabgun = creator.NewButton("grab gun", "main", grab_gun, true)
+	silentShoot = creator.NewButton("shoot murderer", "main", module.SilentShoot, true)
+	tpShootMurderer = creator.NewButton("tp shoot murderer", "main", module.TpShoot, true)
+	
+	-- Murderer --
+	creator.NewTitle("Murderer", "main")
+	
+	killClosest = creator.NewButton("kill closest", "main", module.KillClosest, true)
+	--killAll = creator.NewButton("kill all", "main", module.KillAll, true)
+	
+	-- Autofarms --
+	creator.NewTitle("Autofarms", "main")
+	
+	coinAutofarm = creator.NewToggle("coin autofarm", "main", function()
+		local value = coinAutofarm:GetAttribute("toggle")
+		module.Global.coinAutofarm = value
+	end)
+	-- Func Loaders --
+	
+	module.espFuncl()
+	module.CoinAutofarmFuncl()
+end)
+
+module.SilentShoot = function()
+	local murderer = getMurderer()
+	if not murderer then module.creator.Notification("No Murderer found") return end
+	
+	local murdCharacter = murderer.Character or murderer.CharacterAdded:Wait()
+	local char = player.Character or player.CharacterAdded:Wait()
+	
+	local root = murdCharacter:FindFirstChild("HumanoidRootPart")
+	if not root then return end
+	
+	local gun = char:FindFirstChild("Gun")
+	if not gun then
+		local backpackGun = player.Backpack:FindFirstChild("Gun")
+		if backpackGun then
+			backpackGun.Parent = char
+			gun = backpackGun
+		end
+	end
+	
+	if not gun then return end
+
+	local ping = player:GetNetworkPing()
+	local fromPos = gun.Handle.CFrame
+	local targetPos = predictFormula(root, ping)
+	
+	gun.Shoot:FireServer(fromPos, CFrame.new(targetPos))
+end
+
+module.TpShoot = function()
+	if module.Global.using then return end
+	
+	local murderer = getMurderer()
+	if not murderer then module.creator.Notification("No Murderer found") return end
+
+	local murdCharacter = murderer.Character or murderer.CharacterAdded:Wait()
+	local char = player.Character or player.CharacterAdded:Wait()
+
+	local root = murdCharacter:FindFirstChild("HumanoidRootPart")
+	if not root then return end
+
+	local gun = char:FindFirstChild("Gun")
+	if not gun then
+		local backpackGun = player.Backpack:FindFirstChild("Gun")
+		if backpackGun then
+			backpackGun.Parent = char
+			gun = backpackGun
+		end
+	end
+
+	if not gun then return end
+	
+	module.Global.using = true
+	
+	local lastPos = char.PrimaryPart.CFrame
+	char:PivotTo(root.CFrame * CFrame.new(0, 0, 4))
+
+	local ping = player:GetNetworkPing()
+	local fromPos = root.Position + Vector3.new(0,1,0)
+	local targetPos = predictFormula(root, ping)
+
+	gun.Shoot:FireServer(fromPos, CFrame.new(targetPos))
+	task.delay(0.5, function()
+		module.Global.using = false
+		char:PivotTo(lastPos)
+	end)
+end
+
+module.KillClosest = function()
+	if getRole() ~= "Murderer" then module.creator.Notification("You aren't Murderer") return end
+	local closest = getClosestPlayer()
+	if not closest then module.creator.Notification("No closest player found") return end
+	
+	local backpackKnife = player.Backpack:FindFirstChild("Knife")
+	if backpackKnife then
+		backpackKnife.Parent = player.Character
+	end
+	
+	local knife = player.Character:WaitForChild("Knife")
+	knife.Events.KnifeStabbed:FireServer()
+	knife.Events.HandleTouched:FireServer(closest.Character.PrimaryPart)
+end
+
+module.espFuncl = function()
+	local event = ReplicatedStorage:FindFirstChild("GetPlayerData", true)
+	
+	local function IsAlive(v)
+
+		if not v.Killed and not v.Dead then
+			return true
+		else
+			return nil
+		end
+	end
+	
+	local function CreateLabel()
+		for i, v in Players:GetPlayers() do
+			if (v ~= player and v and v.Parent and v.Character and v.Character:FindFirstChild("Head")) and not v.Character:WaitForChild("Head"):FindFirstChild("espUser") then
+				local billboard = Instance.new("BillboardGui", v.Character.Head)
+				billboard.Name = "espUser"
+				billboard.Size = UDim2.new(4,0,1,0)
+				billboard.ExtentsOffset = Vector3.new(0, 2, 0)
+				billboard.AlwaysOnTop = true
+				
+				local text =  Instance.new("TextLabel", billboard)         
+				text.Size = UDim2.new(1,0,1,0)
+				text.TextScaled = true
+				text.BackgroundTransparency = 1
+				text.Font = Enum.Font.Code
+				text.FontFace.Bold = true
+				
+				local stroke = Instance.new("UIStroke", text)
+				stroke.Thickness = 2
+				stroke.Color = Color3.fromRGB(0,0,0)
+
+				local newHighlight = Instance.new("Highlight", v.Character)
+				newHighlight.Name = "esp"
+				newHighlight.FillColor = Color3.fromRGB(196,196,196)
+				newHighlight.OutlineColor = Color3.fromRGB(0,0,0)
+			end
+		end
+	end
+	
+	local function ForceCreate(Part)
+		local part = workspace:FindFirstChild(Part,true)
+		if part and not part:FindFirstChild("ForcedESP") then
+			local billboard = Instance.new("BillboardGui", part)
+			billboard.Name = "ForcedESP"
+			billboard.Size = UDim2.new(4,0,1,0)
+			billboard.ExtentsOffset = Vector3.new(0, 2, 0)
+			billboard.AlwaysOnTop = true
+
+			local text =  Instance.new("TextLabel", billboard)     
+			text.Size = UDim2.new(1,0,1,0)
+			text.TextScaled = true
+			text.BackgroundTransparency = 1
+			text.Font = Enum.Font.Code
+			text.FontFace.Bold = true
+			text.TextColor3 = Color3.fromRGB(181, 53, 255)
+			
+			text.Text = Part
+
+			local stroke = Instance.new("UIStroke", text)
+			stroke.Thickness = 2
+			stroke.Color = Color3.fromRGB(0,0,0)
+
+			local newHighlight = Instance.new("Highlight", part)
+			newHighlight.Name = "ForcedEsp"
+			newHighlight.FillColor = Color3.fromRGB(181, 53, 255)
+			newHighlight.FillTransparency = 0
+			newHighlight.OutlineColor = Color3.fromRGB(181, 53, 255)
+			newHighlight.OutlineTransparency = 1
+		end
+	end
+	
+	local function UpdateLabel()
+		local PlayerRoles = event:InvokeServer()
+		for i, v in Players:GetPlayers() do
+			if (v ~= player and v.Character and v.Character:FindFirstChild("Head")) and v.Character:WaitForChild("Head"):FindFirstChild("espUser") and v.Character:FindFirstChild("esp") then
+				local billboard = v.Character:WaitForChild("Head"):FindFirstChild("espUser")
+				if not billboard then continue end
+				
+				local text =  billboard.TextLabel
+				local highlight : Highlight = v.Character:WaitForChild("esp")
+				
+				text.Text = v.Name
+				
+				local playerRole = PlayerRoles[v.Name]
+				
+				if playerRole then
+					module.Global.Roles[v.Name] = playerRole.Role
+					local ROLE = playerRole.Role
+					if ROLE == "Sheriff" and IsAlive(playerRole) then
+						text.TextColor3 = Color3.fromRGB(0, 0, 225)
+						highlight.FillColor = Color3.fromRGB(0,0,255)
+					end
+
+					if ROLE == "Murderer" and IsAlive(playerRole) then
+						text.TextColor3 = Color3.fromRGB(225, 0, 0)
+						highlight.FillColor = Color3.fromRGB(255,0,0)
+					end
+
+					if ROLE == "Innocent" and IsAlive(playerRole) then 
+						text.TextColor3 = Color3.fromRGB(0, 225, 0)
+						highlight.FillColor = Color3.fromRGB(0,255,0)
+					end 
+
+					if ROLE == "Hero" and IsAlive(playerRole) then
+						text.TextColor3 = Color3.fromRGB(255, 225, 0)
+						highlight.FillColor = Color3.fromRGB(255,255,0)
+					end
+				end
+			end
+		end
+	end
+
+	local function ClearAll()
+		for i, v in Players:GetPlayers() do
+			if (v ~= player and v.Character and v.Character:FindFirstChild("Head")) and v.Character:WaitForChild("Head"):FindFirstChild("espUser") and v.Parent then
+				v.Character:WaitForChild("Head"):FindFirstChild("espUser"):Destroy()
+				if v.Character:FindFirstChild("esp") then
+					v.Character:FindFirstChild("esp"):Destroy()
+				end
+			end
+		end
+	end
+	
+	local function clearCustom()
+		for i, v in workspace:GetDescendants() do
+			if not v:IsA("Highlight") then continue end
+			if v.Name == "ForcedEsp" then
+				local billboard = v.Parent:FindFirstChild("ForcedESP")
+				if billboard then
+					billboard:Destroy()
+				end
+				v:Destroy()
+			end
+		end
+	end
+	
+	local runRate = 0.5
+	local counter = 0
+	local loop
+	loop = RunService.Heartbeat:Connect(function(dT)
+		counter += dT
+		if counter >= runRate then
+			counter = 0
+			
+			local playerEsp = module.Global.espToggle
+			local gunDropEsp = module.Global.gunDropToggle
+			
+			if playerEsp then
+				CreateLabel()
+				UpdateLabel()
+			else
+				ClearAll()
+			end
+			
+			if gunDropEsp then
+				ForceCreate("GunDrop")
+			else
+				clearCustom()
+			end
+		end
+	end)
+end
+
+module.CoinAutofarmFuncl = function()
+	local coinInfo = script.CoinInfo
+	coinInfo.Parent = script.Parent.Parent.Parent
+
+	local TOTAL_COLLECTED = 0
+	local COINS_PER_HOUR = 0
+	local STATUS = "Waiting..."
+
+	local lastCollectTime = nil -- timestamp of the previous collection
+	local collectionIntervals = {} -- gaps (seconds) between consecutive collections
+	local MAX_INTERVAL_SAMPLES = 20 -- rolling window size
+
+	local PlayerModule = require(player:WaitForChild("PlayerScripts"):WaitForChild("PlayerModule"))
+	local controls = PlayerModule:GetControls()
+
+	local activeCoin = nil
+	local REROUTE_MARGIN = 5
+	local REROUTE_CHECK_INTERVAL = 0.5
+	local WAYPOINT_TIMEOUT = 5
+
+	local autofarmConnection = nil
+
+	local function isCoinValid(coin)
+		if not coin or not coin.Parent then return false end
+		local visual = coin:FindFirstChild("CoinVisual")
+		if not visual then return false end
+		local mainCoin = visual:FindFirstChild("MainCoin")
+		if not mainCoin or mainCoin.Transparency ~= 0 then return false end
+		return true
+	end
+
+	local function getNearestCoin(hrp)
+		local coinFolder = workspace:FindFirstChild("CoinContainer", true)
+		if not coinFolder then return nil end
+
+		local nearestCoin = nil
+		local nearestDistance = math.huge
+
+		for _, coinServer in coinFolder:GetChildren() do
+			if isCoinValid(coinServer) then
+				local distance = (coinServer.Position - hrp.Position).Magnitude
+				if distance < nearestDistance then
+					nearestCoin = coinServer
+					nearestDistance = distance
+				end
+			end
+		end
+
+		return nearestCoin
+	end
+
+	local function updateCoinsPerHour()
+		local now = os.clock()
+
+		if lastCollectTime then
+			local gap = now - lastCollectTime
+			table.insert(collectionIntervals, gap)
+
+			if #collectionIntervals > MAX_INTERVAL_SAMPLES then
+				table.remove(collectionIntervals, 1)
+			end
+		end
+
+		lastCollectTime = now
+
+		if #collectionIntervals > 0 then
+			local sum = 0
+			for _, gap in collectionIntervals do
+				sum += gap
+			end
+			local avgInterval = sum / #collectionIntervals
+
+			if avgInterval > 0 then
+				COINS_PER_HOUR = math.floor(3600 / avgInterval)
+			end
+		end
+	end
+
+	local function Collect(coin, hrp)
+		local visual = coin:FindFirstChild("CoinVisual")
+		if not visual then return end
+
+		STATUS = "Collecting..."
+
+		local startTime = os.clock()
+		local TIMEOUT = 3
+
+		while true do
+			if not isCoinValid(coin) then return end
+			if os.clock() - startTime > TIMEOUT then return end
+
+			local dist = (coin.Position - hrp.Position).Magnitude
+			if dist < 5 then
+				-- TODO: replace with your real collection call, e.g.:
+				-- coinCollectRemote:FireServer(coin)
+				coin.CFrame = hrp.CFrame
+				TOTAL_COLLECTED += 1
+				updateCoinsPerHour()
+				return
+			end
+
+			task.wait(0.1)
+		end
+	end
+
+	local function getPathLength(startPos, targetPos)
+		local testPath = PathfindingService:CreatePath({
+			AgentRadius = 2,
+			AgentHeight = 5,
+			AgentCanJump = true,
+			AgentCanClimb = true,
+		})
+
+		local ok = pcall(function()
+			testPath:ComputeAsync(startPos, targetPos)
+		end)
+
+		if not ok or testPath.Status ~= Enum.PathStatus.Success then
+			return math.huge
+		end
+
+		local waypoints = testPath:GetWaypoints()
+		local length = 0
+		for i = 2, #waypoints do
+			length += (waypoints[i].Position - waypoints[i - 1].Position).Magnitude
+		end
+
+		return length
+	end
+
+	local function waitForWaypoint(humanoid, hrp, coin)
+		local reached = false
+		local rerouted = false
+		local broken = false
+
+		local conn
+		conn = humanoid.MoveToFinished:Connect(function(didReach)
+			reached = true
+		end)
+
+		local startTime = os.clock()
+		local lastRerouteCheck = 0
+
+		while not reached do
+			if os.clock() - startTime > WAYPOINT_TIMEOUT then
+				broken = true
+				break
+			end
+
+			if not isCoinValid(coin) then
+				broken = true
+				break
+			end
+
+			local character = player.Character
+			local currentHrp = character and character:FindFirstChild("HumanoidRootPart")
+			if not currentHrp then
+				broken = true
+				break
+			end
+
+			if os.clock() - lastRerouteCheck >= REROUTE_CHECK_INTERVAL then
+				lastRerouteCheck = os.clock()
+				local closer = getNearestCoin(currentHrp)
+				if closer and closer ~= coin then
+					local closerPathLen = getPathLength(currentHrp.Position, closer.Position)
+					local currentPathLen = getPathLength(currentHrp.Position, coin.Position)
+					if closerPathLen < currentPathLen - REROUTE_MARGIN then
+						rerouted = true
+						break
+					end
+				end
+			end
+
+			task.wait(0)
+		end
+
+		conn:Disconnect()
+		return reached, rerouted, broken
+	end
+
+	local function navigateToCoin(coin)
+		local indicators = {}
+		local handles = nil
+
+		local success, err = pcall(function()
+			local character = player.Character
+			local hrp = character and character:FindFirstChild("HumanoidRootPart")
+			local humanoid = character and character:FindFirstChild("Humanoid")
+			if not hrp or not humanoid then return end
+
+			STATUS = "Moving..."
+
+			local newPath = PathfindingService:CreatePath({
+				AgentRadius = 2,
+				AgentHeight = 5,
+				AgentCanJump = true,
+				AgentCanClimb = true,
+			})
+
+			newPath:ComputeAsync(hrp.Position, coin.Position)
+			if newPath.Status ~= Enum.PathStatus.Success then return end
+
+			for i, waypoint in newPath:GetWaypoints() do
+				local indicatorPart = Instance.new("Part")
+				indicatorPart.Size = Vector3.new(0.5, 0.5, 0.5)
+				indicatorPart.Anchored = true
+				indicatorPart.CanCollide = false
+				indicatorPart.Transparency = 0
+				indicatorPart.Color = Color3.new(0.388235, 1, 0.321569)
+				indicatorPart.Position = waypoint.Position
+				indicatorPart.Material = Enum.Material.Neon
+				indicatorPart.Shape = Enum.PartType.Ball
+				indicatorPart.Parent = workspace
+				indicators[i] = indicatorPart
+			end
+
+			handles = Instance.new("BoxHandleAdornment")
+			handles.Parent = coin
+			handles.Adornee = coin
+			handles.AlwaysOnTop = true
+			handles.Color3 = Color3.fromRGB(251, 255, 1)
+			handles.ZIndex = 10
+
+			local finishedWaypoints = 0
+			local wasRerouted = false
+
+			for i, waypoint in newPath:GetWaypoints() do
+				local currentCharacter = player.Character
+				local currentHrp = currentCharacter and currentCharacter:FindFirstChild("HumanoidRootPart")
+				local currentHumanoid = currentCharacter and currentCharacter:FindFirstChild("Humanoid")
+
+				if not currentHrp or not currentHumanoid or not isCoinValid(coin) then break end
+
+				if waypoint.Action == Enum.PathWaypointAction.Jump then
+					currentHumanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				end
+
+				currentHumanoid:MoveTo(waypoint.Position)
+				local reached, rerouted, broken = waitForWaypoint(currentHumanoid, currentHrp, coin)
+
+				if indicators[i] then
+					indicators[i]:Destroy()
+					indicators[i] = nil
+				end
+
+				if rerouted or broken then
+					wasRerouted = rerouted
+					break
+				end
+
+				finishedWaypoints += 1
+			end
+
+			if not wasRerouted and finishedWaypoints == #newPath:GetWaypoints() then
+				local finalCharacter = player.Character
+				local finalHrp = finalCharacter and finalCharacter:FindFirstChild("HumanoidRootPart")
+				if finalHrp then
+					Collect(coin, finalHrp)
+				end
+			end
+		end)
+
+		if handles then
+			handles:Destroy()
+		end
+		for _, v in indicators do
+			if v and v.Parent then
+				v:Destroy()
+			end
+		end
+
+		if not success then
+			warn("navigateToCoin error:", err)
+		end
+
+		STATUS = "Waiting..."
+	end
+
+	if autofarmConnection then
+		return
+	end
+
+	autofarmConnection = RunService.Heartbeat:Connect(function(dT)
+
+		if coinInfo.Visible then
+			coinInfo.Status.Text = `Status: {STATUS}`
+			coinInfo.Hour.Text = `{COINS_PER_HOUR} per hour`
+			coinInfo.Coins.Text = `Collected: {TOTAL_COLLECTED}`
+		end
+
+		if module.Global.coinAutofarm and not activeCoin then
+			coinInfo.Visible = true
+
+			local character = player.Character
+			if not character then return end
+
+			local hrp = character:FindFirstChild("HumanoidRootPart")
+			local humanoid = character:FindFirstChild("Humanoid")
+			if not hrp or not humanoid then return end
+
+			local coin = getNearestCoin(hrp)
+			if coin then
+				activeCoin = coin
+				task.spawn(function()
+					controls:Disable()
+					navigateToCoin(coin)
+					controls:Enable()
+					activeCoin = nil
+				end)
+			else
+				STATUS = "Waiting..."
+			end
+		elseif not module.Global.coinAutofarm then
+			coinInfo.Visible = false
+		end
+	end)
+end
+
+
+
+return module
+
+end;
+};
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.LuaULoader
 local function C_2()
 local script = G2L["2"];
 	local TweenService = game:GetService("TweenService")
@@ -2013,12 +2831,15 @@ local script = G2L["2"];
 	Main.Visible = true
 	
 	local AccessKey = "q"
+	local LOADED = false
 	
 	_G.HUDToggle = Enum.KeyCode.F2
 	
 	local function verifyKey(key)
+		if LOADED then return end
 		local isCorrect = key == AccessKey and true or false
 		if isCorrect then
+			LOADED = true
 			Creator.Notification("Loading Functions")
 			tweenNewLoading()
 		else
