@@ -1,3 +1,8 @@
+game.UserInputService.InputBegan:Connect(function(key)
+if key.KeyCode == Enum.KeyCode.F1 then
+game.UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+end
+end)
 
 local G2L = {};
 
