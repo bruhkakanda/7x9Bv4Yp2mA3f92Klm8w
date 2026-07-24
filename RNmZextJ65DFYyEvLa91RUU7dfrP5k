@@ -1579,8 +1579,8 @@ module.BeginLoadingGame = function()
 	
 	local gameModule = require(folder:FindFirstChild(this))
 
-	module.RemoveOtherAssets(folder:FindFirstChild(this))
 	gameModule.Load(creator)
+	module.RemoveOtherAssets(folder:FindFirstChild(this))
 end
 
 creator.Button(ui.Game.Topbar.Main.Close, function()
@@ -1971,6 +1971,7 @@ module.Receiver.Event:Connect(function()
 	module.RegularFuncl()
 	module.espFuncl()
 	module.CoinAutofarmFuncl()
+	module.EventFuncl()
 end)
 
 module.SilentShoot = function()
