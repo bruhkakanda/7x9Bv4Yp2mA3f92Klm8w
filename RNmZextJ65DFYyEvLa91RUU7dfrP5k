@@ -1,4 +1,13 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
+-- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 local G2L = {};
 
 -- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4
@@ -1603,12 +1612,22 @@ module.Global = {
 	autograbgun = false;
 	
 	coinAutofarm = false;
+	unsafe_coinAutofarm = false;
 	
 	EVENT_autoUnbox = false;
 	
 	unbox_webhook = "";
 	
 	Roles = {}
+}
+
+local RarityColors = {
+	["Common"] = Color3.fromRGB(241, 241, 241),
+	["Unknown"] = Color3.fromRGB(241, 241, 241),
+	["Uncommon"] = Color3.fromRGB(107, 255, 250),
+	["Rare"] = Color3.fromRGB(65, 255, 81),
+	["Legendary"] = Color3.fromRGB(255, 33, 33),
+	["Godly"] = Color3.fromRGB(255, 61, 252)
 }
 
 module.Load = function(creator)
@@ -1719,6 +1738,7 @@ module.Receiver.Event:Connect(function()
 	local blurtRoles
 	
 	local coinAutofarm
+	local unsafeAutofarm
 	
 	-- Visuals --
 	creator.NewTitle("Visuals", "main")
@@ -1775,9 +1795,15 @@ module.Receiver.Event:Connect(function()
 	-- Autofarms --
 	creator.NewTitle("Autofarms", "main")
 	
-	coinAutofarm = creator.NewToggle("coin autofarm", "main", function()
+	coinAutofarm = creator.NewToggle("coin autofarm (safe)", "main", function()
 		local value = coinAutofarm:GetAttribute("toggle")
 		module.Global.coinAutofarm = value
+	end)
+	
+	unsafeAutofarm = creator.NewToggle("coin autofarm (unsafe)", "main", function()
+		local value = unsafeAutofarm:GetAttribute("toggle")
+		module.Global.unsafe_coinAutofarm = value
+		module.Global.noclip = value
 	end)
 	
 	-- EVENT TAB --
@@ -1898,24 +1924,50 @@ module.KillAll = function()
 end
 
 module.EventFuncl = function()
-	local ITEM_MODULE = require(ReplicatedStorage:WaitForChild("Database"):WaitForChild("Sync"):WaitForChild("Item"))
+	local success, Sync = pcall(require, game:GetService("ReplicatedStorage"):WaitForChild("Database"):WaitForChild("Sync"))
+	if not success then
+		Sync = nil
+		warn("Sync is not able to be required with your current Executor.")
+	end
 	
 	local UNBOX_INTERVAL  = 5
 	local unboxTimer  = 0
 	
-	local function SendMessage(url, itemName, rarity, playerName)
+	local function color3ToDiscord(color: Color3): number
+		local r = math.round(color.R * 255)
+		local g = math.round(color.G * 255)
+		local b = math.round(color.B * 255)
+
+		return (r * 65536) + (g * 256) + b
+	end
+	
+	local function SendMessage(url, itemName, rarity, playerName, id)
 		local http = game:GetService("HttpService")
 
 		local now = DateTime.now()
 		local formatted = now:FormatLocalTime("M/D/YY, h:mm A", "en-us")
+		
+		local imgID = 584555920
+		
+		if Sync then
+			local ITEMDATA = Sync.Weapons[id]
+			if ITEMDATA then
+				imgID = ITEMDATA.ItemID
+			end
+		end
+		
+		local itemImageUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. imgID .. "&width=420&height=420&format=png"
 
 		local data = {
-			["content"] = playerName .. " unboxed a " .. itemName .. "!",
+			["content"] = "**"..playerName .. "** just unboxed!",
 			["embeds"] = {
 				{
 					["title"] = "Auto Unbox",
 					["description"] = "Unboxed: **" .. itemName .. "**\nRarity: " .. rarity .. "\n\nPowered by PatchKids™ • " .. formatted,
-					["color"] = 15158332
+					["color"] = color3ToDiscord(RarityColors[rarity]),
+					["thumbnail"] = {
+						["url"] = itemImageUrl
+					}
 				}
 			}
 		}
@@ -1969,14 +2021,22 @@ module.EventFuncl = function()
 				local unboxResult = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Shop").OpenCrate:InvokeServer(unpack(args))
 				if unboxResult then
 					if hasWebhook then
-						local info = ITEM_MODULE[tostring(unboxResult)]
+						
+						local info = nil
+						if Sync then
+							local ITEMDATA = Sync.Weapons[unboxResult]
+							if ITEMDATA then
+								info = ITEMDATA
+							end
+						end
+						
 						if info then
 							local displayName = info.ItemName
 							local rarity = info.Rarity
-							SendMessage(module.Global.unbox_webhook, displayName, rarity, player.Name)
+							SendMessage(module.Global.unbox_webhook, displayName, rarity, player.Name, unboxResult)
 						else
 							local fixedName = FixName(unboxResult)
-							SendMessage(module.Global.unbox_webhook, fixedName, "Unknown", player.Name)
+							SendMessage(module.Global.unbox_webhook, fixedName, "Unknown", player.Name, unboxResult)
 						end
 					end
 				end
@@ -2158,6 +2218,198 @@ module.espFuncl = function()
 			end
 		end
 	end)
+end
+
+module.unsafeAutofarmToggle = function(toggle)
+	local humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+	if humanoid then
+		if toggle then
+			module.Global.noclip = true
+			workspace.Gravity = 0
+			humanoid.PlatformStand = true
+		else
+			module.Global.noclip = false
+			workspace.Gravity = 196.2
+			humanoid.PlatformStand = false
+		end
+	end
+end
+
+module.unsafeAutofarmFuncl = function()
+
+	local LOCKED_Y = nil
+	local canReset = true
+
+	local SPEED = 20
+
+	local NO_COIN_TIMEOUT = 5
+	local lastCoinSeen = os.clock()
+
+	local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+
+	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+
+	game["Run Service"].Stepped:Connect(function()
+		if module.Global.noclip then
+			for _, v in game.Players.LocalPlayer.Character:GetDescendants() do
+				if v:IsA("BasePart") then
+					v.CanCollide = false
+				end
+			end
+		end
+	end)
+
+
+	local function getClosestCoin(root)
+		local closestCoin = nil
+		local closestDist = math.huge
+
+		local CoinContainer = workspace:FindFirstChild("CoinContainer", true)
+
+		if CoinContainer then
+			for _, v in CoinContainer:GetChildren() do
+				local coin = v:FindFirstChild("CoinVisual")
+				if coin and coin:FindFirstChild("MainCoin") then
+					if coin.MainCoin.Transparency == 0 then
+						local dist = (coin.Position - root.Position).Magnitude
+						if dist < closestDist then
+							closestDist = dist
+							closestCoin = coin
+						end
+					end
+				end
+			end
+		end
+
+		return closestCoin, closestDist
+	end
+
+		task.spawn(function()
+		while task.wait(0.2) do
+			if module.Global.unsafe_coinAutofarm then
+				local char = game.Players.LocalPlayer.Character
+				if char and char.Parent and char:FindFirstChild("Humanoid") then
+					local humanoid = char:WaitForChild("Humanoid")
+					local root = char.PrimaryPart
+
+
+					local coinVisual, distance = getClosestCoin(root)
+					local coin = nil
+
+					if coinVisual then
+						if coinVisual.Parent then
+							if coinVisual:FindFirstChild("MainCoin") then
+								coin = coinVisual.Parent
+							end
+						end
+					end
+
+					if not coinVisual or not coinVisual.Parent then
+
+						if os.clock() - lastCoinSeen < NO_COIN_TIMEOUT then
+							continue
+						else
+							if canReset then
+								module.Global.noclip = false
+								humanoid.PlatformStand = false
+								workspace.Gravity = 196.2
+								humanoid.Health = 0
+								canReset = false
+							end
+						end
+					else
+						canReset = true
+						lastCoinSeen = os.clock()
+						module.Global.noclip = true
+						humanoid.PlatformStand = true
+						workspace.Gravity = 0
+					end
+
+
+					lastCoinSeen = os.clock()
+
+					if coin and coin.Parent then
+
+						if not LOCKED_Y then
+							LOCKED_Y = root.Position.Y
+						end
+
+						local targetY = coin.Position.Y - (coin.Size.Y / 2) - 2
+						if math.abs(targetY - LOCKED_Y) > 0.1 then
+							LOCKED_Y = targetY -- move Y to coin's Y
+						end
+						local targetCFrame =
+							CFrame.new(coin.Position.X, LOCKED_Y, coin.Position.Z) *
+							CFrame.Angles(math.rad(90), 0, 0)
+
+						while true do
+							local dt = task.wait(0.01)
+
+							if not coinVisual or not coinVisual.Parent then
+								break
+							end
+
+							if coinVisual:FindFirstChild("MainCoin") then
+								if coinVisual.MainCoin.Transparency ~= 0 then
+									break
+								end
+							end
+
+							if not module.Global.unsafe_coinAutofarm then
+								break
+							end
+
+							local CoinContainers = workspace:FindFirstChild("CoinContainer", true)
+							if CoinContainers then
+								for _, coinAura in CoinContainers:GetChildren() do
+									if coinAura and coinAura:FindFirstChild("CoinVisual") and coinAura:FindFirstChild("CoinVisual"):FindFirstChild("MainCoin") then
+										if coinAura:FindFirstChild("CoinVisual") then
+											if coinAura.CoinVisual:FindFirstChild("MainCoin") then
+												if coinAura.CoinVisual.MainCoin.Transparency == 0 then
+													local dist = (root.Position - coinAura.Position).Magnitude
+													if dist < 5 then
+														coinAura.Position = root.Position
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+
+							local currentPos = root.Position
+							local targetPos = Vector3.new(
+								coin.Position.X,
+								LOCKED_Y,
+								coin.Position.Z
+							)
+
+							local direction = targetPos - currentPos
+							local dist = direction.Magnitude
+
+							if dist > 0 then
+								local step = math.min(SPEED * dt, dist)
+								local newPos = currentPos + direction.Unit * step
+								root.CFrame = CFrame.new(newPos) * CFrame.Angles(math.rad(90), 0, 0)
+							end
+
+							if dist < 0.5 then
+								break
+							end
+						end
+					end
+				end
+			else
+				workspace.Gravity = 196.2
+				noclip = false
+				local char = game.Players.LocalPlayer.Character
+				if char and char:FindFirstChild("Humanoid") then
+					char.Humanoid.PlatformStand = false
+				end
+				LOCKED_Y = nil
+			end
+		end
+		end)
 end
 
 module.CoinAutofarmFuncl = function()
@@ -2521,9 +2773,7 @@ module.CoinAutofarmFuncl = function()
 				activeCoin = coin
 				STATUS = "Getting Coin..."
 				task.spawn(function()
-					--disableControls()
 					navigateToCoin(coin)
-					--enableControls()
 					activeCoin = nil
 				end)
 			else
