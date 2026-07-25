@@ -1,5 +1,4 @@
 
--- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 local G2L = {};
 
 -- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4
@@ -1545,21 +1544,6 @@ end;
 G2L_MODULES[G2L["36"]] = {
 Closure = function()
     local script = G2L["36"];local module = {}
-module.FlySpeed = 1
-
-local Players        = game:GetService("Players")
-local UserInputService = game:GetService("UserInputService")
-local RunService     = game:GetService("RunService")
-
-local Player         = Players.LocalPlayer
-local SMOOTHNESS     = 0.15
-
-local isFlying       = false
-local flyConnection  = nil
-local bodyVelocity   = nil
-local bodyGyro       = nil
-
-local FLY_TOGGLE = Enum.KeyCode.F
 
 local folder = script.canLoad
 local creator = require(script.Parent.creator)
@@ -1654,7 +1638,7 @@ local function getClosestPlayer()
 				local distance = (hrp.Position - root.Position).Magnitude
 				if distance < closestDistance then
 					closestDistance = distance
-					closestPlayer   = player
+					closestPlayer   = plr
 				end
 			end
 		end
@@ -2191,9 +2175,6 @@ module.CoinAutofarmFuncl = function()
 	local lastCollectedTime = os.clock()
 	local STUCK_TIMEOUT = 8 
 
-	local PlayerModule = require(player:WaitForChild("PlayerScripts"):WaitForChild("PlayerModule"))
-	local controls = PlayerModule:GetControls()
-
 	local activeCoin = nil
 	local REROUTE_MARGIN = 5
 	local REROUTE_CHECK_INTERVAL = 0.5
@@ -2203,6 +2184,22 @@ module.CoinAutofarmFuncl = function()
 	
 	local failedCoins = {}
 	local FAILED_COIN_COOLDOWN = 10
+	
+	local function disableControls()
+		local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+		if humanoid then
+			humanoid.WalkSpeed = 0
+			humanoid.JumpPower = 0
+		end
+	end
+
+	local function enableControls()
+		local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+		if humanoid then
+			humanoid.WalkSpeed = 16
+			humanoid.JumpPower = 50
+		end
+	end
 
 	local function isCoinBlacklisted(coin)
 		local t = failedCoins[coin]
@@ -2524,9 +2521,9 @@ module.CoinAutofarmFuncl = function()
 				activeCoin = coin
 				STATUS = "Getting Coin..."
 				task.spawn(function()
-					controls:Disable()
+					disableControls()
 					navigateToCoin(coin)
-					controls:Enable()
+					enableControls()
 					activeCoin = nil
 				end)
 			else
