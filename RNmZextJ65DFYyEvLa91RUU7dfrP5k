@@ -2521,9 +2521,9 @@ module.CoinAutofarmFuncl = function()
 				activeCoin = coin
 				STATUS = "Getting Coin..."
 				task.spawn(function()
-					disableControls()
+					--disableControls()
 					navigateToCoin(coin)
-					enableControls()
+					--enableControls()
 					activeCoin = nil
 				end)
 			else
