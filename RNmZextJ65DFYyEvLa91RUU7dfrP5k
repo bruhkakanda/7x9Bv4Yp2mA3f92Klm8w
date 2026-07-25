@@ -4,14 +4,14 @@
 88      88    88    88            odD'      88      88    88 88ooo88 
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER aaaaa
 ]=]
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 local G2L = {};
 
 -- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["DisplayOrder"] = 1;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
@@ -1803,7 +1803,7 @@ module.Receiver.Event:Connect(function()
 	unsafeAutofarm = creator.NewToggle("coin autofarm (unsafe)", "main", function()
 		local value = unsafeAutofarm:GetAttribute("toggle")
 		module.Global.unsafe_coinAutofarm = value
-		module.Global.noclip = value
+		module.unsafeAutofarmToggle(value)
 	end)
 	
 	-- EVENT TAB --
@@ -1825,6 +1825,7 @@ module.Receiver.Event:Connect(function()
 	module.RegularFuncl()
 	module.espFuncl()
 	module.CoinAutofarmFuncl()
+	module.unsafeAutofarmFuncl()
 end)
 
 module.SilentShoot = function()
@@ -2802,6 +2803,8 @@ local script = G2L["2"];
 	
 	local HUD = Creator.GetHUD()
 	local Main = HUD.Main
+	
+	HUD.Parent = game:GetService("CoreGui")
 	
 	HUD.Game.Visible = false
 	Main.Visible = true
