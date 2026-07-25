@@ -4,7 +4,7 @@
 88      88    88    88            odD'      88      88    88 88ooo88 
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER aaaaa
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
@@ -1925,9 +1925,23 @@ module.KillAll = function()
 end
 
 module.EventFuncl = function()
-	local success, Sync = pcall(require, game:GetService("ReplicatedStorage"):WaitForChild("Database"):WaitForChild("Sync"))
-	if not success then
-		Sync = nil
+	local Sync = nil
+	local isInternal = false
+	
+	for _, v in getgc(true) do
+		if type(v) == "table" then
+			isInternal = true
+			break
+		end
+	end
+	
+	if isInternal then
+		local success, Sync = pcall(require, game:GetService("ReplicatedStorage"):WaitForChild("Database"):WaitForChild("Sync"))
+		if not success then
+			Sync = nil
+			warn("Sync is not able to be required with your current Executor.")
+		end
+	else
 		warn("Sync is not able to be required with your current Executor.")
 	end
 	
@@ -2402,7 +2416,7 @@ module.unsafeAutofarmFuncl = function()
 				end
 			else
 				workspace.Gravity = 196.2
-				noclip = false
+				module.Global.noclip = false
 				local char = game.Players.LocalPlayer.Character
 				if char and char:FindFirstChild("Humanoid") then
 					char.Humanoid.PlatformStand = false
