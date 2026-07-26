@@ -5,7 +5,7 @@
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
+]=] --888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 local G2L = {};
@@ -1927,21 +1927,23 @@ end
 module.EventFuncl = function()
 	local Sync = nil
 	local isInternal = false
-	
+
 	for _, v in getgc(true) do
-		if type(v) == "table" then
+		if type(v) == "table" 
+			and rawget(v, "Weapons")
+			and rawget(v, "Item")
+			and rawget(v, "Weapons") == rawget(v, "Item") -- same reference confirms it's Sync
+			and rawget(v, "Pets")
+			and rawget(v, "MysteryBox") then
+			Sync = v
 			isInternal = true
+			print("found Sync!")
 			break
 		end
 	end
 	
-	if isInternal then
-		local success, Sync = pcall(require, game:GetService("ReplicatedStorage"):WaitForChild("Database"):WaitForChild("Sync"))
-		if not success then
-			Sync = nil
-			warn("Sync is not able to be required with your current Executor.")
-		end
-	else
+	if not isInternal then
+		Sync = nil
 		warn("Sync is not able to be required with your current Executor.")
 	end
 	
@@ -1956,6 +1958,24 @@ module.EventFuncl = function()
 		return (r * 65536) + (g * 256) + b
 	end
 	
+	local function getItemImage(assetId)
+		local s, response = pcall(request, {
+			Url = "https://thumbnails.roblox.com/v1/assets?assetIds=" .. assetId .. "&returnPolicy=PlaceHolder&size=250x250&format=Png&isCircular=false",
+			Method = "GET"
+		})
+
+		if not s then return nil end
+
+		local s2, data = pcall(game:GetService("HttpService").JSONDecode, game:GetService("HttpService"), response.Body)
+		if not s2 then return nil end
+
+		if data and data.data and data.data[1] then
+			return data.data[1].imageUrl
+		end
+
+		return nil
+	end
+	
 	local function SendMessage(url, itemName, rarity, playerName, id)
 		local http = game:GetService("HttpService")
 
@@ -1963,15 +1983,21 @@ module.EventFuncl = function()
 		local formatted = now:FormatLocalTime("M/D/YY, h:mm A", "en-us")
 		
 		local imgID = 584555920
+		local itemName = itemName
+		local rarity = rarity
 		
 		if Sync then
 			local ITEMDATA = Sync.Weapons[id]
 			if ITEMDATA then
 				imgID = ITEMDATA.ItemID
+				itemName = ITEMDATA.ItemName
+				rarity = ITEMDATA.Rarity or "Common"
+				
+				warn("Found item data for:", id)
 			end
 		end
 		
-		local itemImageUrl = "https://www.roblox.com/asset-thumbnail/image?assetId=" .. imgID .. "&width=420&height=420&format=png"
+		local itemImageUrl = getItemImage(imgID) or ""
 
 		local data = {
 			["content"] = "**"..playerName .. "** just unboxed!",
