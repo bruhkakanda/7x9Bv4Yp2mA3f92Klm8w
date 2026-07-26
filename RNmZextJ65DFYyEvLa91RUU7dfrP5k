@@ -3,9 +3,9 @@
 88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
 88      88    88    88            odD'      88      88    88 88ooo88 
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev 8989898989898989
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=] -- aaaaaaaaaaaaaaaaaaaaaaa
+]=]
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 local G2L = {};
@@ -2002,12 +2002,33 @@ module.EventFuncl = function()
 		local itemName = itemName
 		local rarity = rarity
 		
+		local itemType = "Item"
+		if id then
+			if id:find("_K_") then
+				itemType = "Knife"
+			elseif id:find("_G_") then
+				itemType = "Gun"
+			end
+		end
+		
+		local EventEmojis = {
+			["Summer"] = "🍉",
+			["Halloween"] = "🎃",
+			["Christmas"] = "⛄",
+			["Unknown"] = "❓",
+		}
+		
+		local Event = "❓"
+		local Year = "Unknown"
+		
 		if Sync then
 			local ITEMDATA = Sync.Weapons[id]
 			if ITEMDATA then
 				imgID = ITEMDATA.ItemID
 				itemName = ITEMDATA.ItemName
 				rarity = ITEMDATA.Rarity or "Common"
+				Year = ITEMDATA.Year or "Unknown"
+				Event = EventEmojis[ITEMDATA.Event or "Unknown"] or "❓"
 				
 				warn("Found item data for:", id)
 			end
@@ -2016,14 +2037,17 @@ module.EventFuncl = function()
 		local itemImageUrl = getItemImage(imgID) or ""
 
 		local data = {
-			["content"] = "**"..playerName .. "** just unboxed!",
+			["content"] = "**" .. playerName .. "** just unboxed a " .. itemType .. "!",
 			["embeds"] = {
 				{
 					["title"] = "Auto Unbox",
-					["description"] = "Unboxed: **" .. itemName .. "**\nRarity: " .. rarity .. "\n\nPowered by PatchKids™ • " .. formatted,
-					["color"] = color3ToDiscord(RarityColors[rarity]),
+					["description"] = "Unboxed: **" .. itemName .. "**\nRarity: " .. rarity .. "\nEvent: " .. Event .. Year,
+					["color"] = color3ToDiscord(RarityColors[rarity] or RarityColors["Common"]),
 					["thumbnail"] = {
 						["url"] = itemImageUrl
+					},
+					["footer"] = {
+						["text"] = "Powered by PatchKids™ • " .. formatted
 					}
 				}
 			}
