@@ -5,7 +5,7 @@
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=] --888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+]=] -- aaaaaaaaaaaaaaaaaaaaaaa
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 local G2L = {};
@@ -1815,8 +1815,24 @@ module.Receiver.Event:Connect(function()
 		local value = EVENT_autoUnbox:GetAttribute("toggle")
 		module.Global.EVENT_autoUnbox = value
 	end)
+	
+	local WEBHOOK_FILE = "PatchKids2/webhook.txt"
+
+	if isfile(WEBHOOK_FILE) then
+		local saved = readfile(WEBHOOK_FILE)
+		if saved ~= "" then
+			webhook.TextBox.Text = saved
+			module.Global.unbox_webhook = saved
+			module.creator.Notification("Loaded saved webhook!")
+		end
+	end
+	
 	webhook.TextBox.Changed:Connect(function()
-		module.Global.unbox_webhook = webhook.TextBox.Text
+		local url = webhook.TextBox.Text
+		module.Global.unbox_webhook = url
+		if url ~= "" then
+			writefile(WEBHOOK_FILE, url)
+		end
 	end)
 	
 	-- Func Loaders --
@@ -1932,7 +1948,7 @@ module.EventFuncl = function()
 		if type(v) == "table" 
 			and rawget(v, "Weapons")
 			and rawget(v, "Item")
-			and rawget(v, "Weapons") == rawget(v, "Item") -- same reference confirms it's Sync
+			and rawget(v, "Weapons") == rawget(v, "Item")
 			and rawget(v, "Pets")
 			and rawget(v, "MysteryBox") then
 			Sync = v
@@ -2994,6 +3010,15 @@ local script = G2L["2"];
 	end
 	
 	local keybind = Creator.NewKeybind("toggle key", "settings", "Q", keybindcallback)
+	
+	Creator.Notification("Creating PK2 files...")
+	local SAVE_FOLDER = "PatchKids2"
+	if not isfolder(SAVE_FOLDER) then
+		makefolder(SAVE_FOLDER)
+		Creator.Notification("PK2 files created!")
+	else
+		Creator.Notification("PK2 files found!")
+	end
 	
 	Lua.BeginLoadingGame()
 end;
