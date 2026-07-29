@@ -1943,7 +1943,7 @@ end
 module.EventFuncl = function()
 	local Sync = nil
 	local isInternal = false
-
+if getgc then
 	for _, v in getgc(true) do
 		if type(v) == "table" 
 			and rawget(v, "Weapons")
@@ -1957,7 +1957,7 @@ module.EventFuncl = function()
 			break
 		end
 	end
-	
+	end
 	if not isInternal then
 		Sync = nil
 		warn("Sync is not able to be required with your current Executor.")
