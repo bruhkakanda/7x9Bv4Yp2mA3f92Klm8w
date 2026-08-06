@@ -1,0 +1,3052 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev 8989898989898989
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
+
+local G2L = {};
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["DisplayOrder"] = 1;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[8F9n2PqW4]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.LuaULoader
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"]["Name"] = [[LuaULoader]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator
+G2L["3"] = Instance.new("ModuleScript", G2L["1"]);
+G2L["3"]["Name"] = [[creator]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification
+G2L["4"] = Instance.new("Frame", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["4"]["Size"] = UDim2.new(1, 0, 0.4, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[Notification]];
+G2L["4"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move
+G2L["5"] = Instance.new("Frame", G2L["4"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["5"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["5"]["Size"] = UDim2.new(0.95, 0, 1, 0);
+G2L["5"]["Position"] = UDim2.new(2, 0, 0.5, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[Move]];
+G2L["5"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.Text
+G2L["6"] = Instance.new("TextLabel", G2L["5"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["6"]["Size"] = UDim2.new(0.78718, 0, 0.8, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Incorrect Access key!]];
+G2L["6"]["Name"] = [[Text]];
+G2L["6"]["Position"] = UDim2.new(0.60838, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["5"]);
+G2L["7"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.UIStroke
+G2L["8"] = Instance.new("UIStroke", G2L["5"]);
+G2L["8"]["Thickness"] = 3;
+G2L["8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.Icon
+G2L["9"] = Instance.new("ImageLabel", G2L["5"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["9"]["Image"] = [[rbxassetid://17328930401]];
+G2L["9"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Name"] = [[Icon]];
+G2L["9"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.Move.Icon.UIAspectRatioConstraint
+G2L["a"] = Instance.new("UIAspectRatioConstraint", G2L["9"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Notification.UIScale
+G2L["b"] = Instance.new("UIScale", G2L["4"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton
+G2L["c"] = Instance.new("TextButton", G2L["3"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(109, 112, 132);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["c"]["Size"] = UDim2.new(0.8, 0, 0.8, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[]];
+G2L["c"]["Name"] = [[TabButton]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.UIAspectRatioConstraint
+G2L["d"] = Instance.new("UIAspectRatioConstraint", G2L["c"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["c"]);
+G2L["e"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.UIStroke
+G2L["f"] = Instance.new("UIStroke", G2L["c"]);
+G2L["f"]["Thickness"] = 3;
+G2L["f"]["Color"] = Color3.fromRGB(57, 59, 69);
+G2L["f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["f"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TabButton.ImageLabel
+G2L["10"] = Instance.new("ImageLabel", G2L["c"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["10"]["Image"] = [[rbxassetid://137327770486401]];
+G2L["10"]["Size"] = UDim2.new(0.8, 0, 0.8, 0);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic
+G2L["11"] = Instance.new("TextButton", G2L["3"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(109, 112, 132);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0.6, 0, 0.15, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[]];
+G2L["11"]["Name"] = [[Classic]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
+G2L["12"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.UIStroke
+G2L["13"] = Instance.new("UIStroke", G2L["11"]);
+G2L["13"]["Thickness"] = 3;
+G2L["13"]["Color"] = Color3.fromRGB(57, 59, 69);
+G2L["13"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["13"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Title
+G2L["14"] = Instance.new("TextLabel", G2L["11"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["14"]["Size"] = UDim2.new(1, 0, 0.8, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[kill all]];
+G2L["14"]["Name"] = [[Title]];
+G2L["14"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar
+G2L["15"] = Instance.new("Frame", G2L["11"]);
+G2L["15"]["Visible"] = false;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["15"]["Size"] = UDim2.new(0.15, 0, 0.9, 0);
+G2L["15"]["Position"] = UDim2.new(0.8, 0, 0.5, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Name"] = [[Bar]];
+G2L["15"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.Key
+G2L["16"] = Instance.new("TextLabel", G2L["15"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["16"]["Size"] = UDim2.new(1, 0, 0.8, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[F2]];
+G2L["16"]["Name"] = [[Key]];
+G2L["16"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.Gap
+G2L["17"] = Instance.new("Frame", G2L["15"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["17"]["Size"] = UDim2.new(1, 0, 0, 2);
+G2L["17"]["Position"] = UDim2.new(0.5, 0, 0.99, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Name"] = [[Gap]];
+G2L["17"]["LayoutOrder"] = -10;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.Gap.UIGradient
+G2L["18"] = Instance.new("UIGradient", G2L["17"]);
+G2L["18"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.TextButton
+G2L["19"] = Instance.new("TextButton", G2L["15"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Classic.Bar.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["15"]);
+G2L["1a"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab
+G2L["1b"] = Instance.new("ScrollingFrame", G2L["3"]);
+G2L["1b"]["Active"] = true;
+G2L["1b"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["1b"]["Name"] = [[Tab]];
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["1b"]["Size"] = UDim2.new(1, 0, 0.73539, 0);
+G2L["1b"]["Position"] = UDim2.new(0, 0, 0.26461, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.UIListLayout
+G2L["1c"] = Instance.new("UIListLayout", G2L["1b"]);
+G2L["1c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["1c"]["Padding"] = UDim.new(0.025, 0);
+G2L["1c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.Gap
+G2L["1d"] = Instance.new("Frame", G2L["1b"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Size"] = UDim2.new(0.7, 0, 0, 1);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Name"] = [[Gap]];
+G2L["1d"]["LayoutOrder"] = -10;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.Gap.UIGradient
+G2L["1e"] = Instance.new("UIGradient", G2L["1d"]);
+G2L["1e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Tab.Gap2
+G2L["1f"] = Instance.new("Frame", G2L["1b"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["Size"] = UDim2.new(0.7, 0, 0.3, 0);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Name"] = [[Gap2]];
+G2L["1f"]["LayoutOrder"] = 999;
+G2L["1f"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle
+G2L["20"] = Instance.new("TextButton", G2L["3"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(109, 112, 132);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["Size"] = UDim2.new(0.6, 0, 0.15, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[]];
+G2L["20"]["Name"] = [[Toggle]];
+G2L["20"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.UICorner
+G2L["21"] = Instance.new("UICorner", G2L["20"]);
+G2L["21"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.UIStroke
+G2L["22"] = Instance.new("UIStroke", G2L["20"]);
+G2L["22"]["Thickness"] = 3;
+G2L["22"]["Color"] = Color3.fromRGB(57, 59, 69);
+G2L["22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["22"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Title
+G2L["23"] = Instance.new("TextLabel", G2L["20"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextScaled"] = true;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["23"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[player esp]];
+G2L["23"]["Name"] = [[Title]];
+G2L["23"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Bar
+G2L["24"] = Instance.new("Frame", G2L["20"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 162, 162);
+G2L["24"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["24"]["Size"] = UDim2.new(0.1, 0, 0.6, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[Bar]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Bar.UICorner
+G2L["25"] = Instance.new("UICorner", G2L["24"]);
+G2L["25"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Toggle.Bar.UIAspectRatioConstraint
+G2L["26"] = Instance.new("UIAspectRatioConstraint", G2L["24"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.title
+G2L["27"] = Instance.new("TextLabel", G2L["3"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["Size"] = UDim2.new(1, 0, 0.1, 0);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[test]];
+G2L["27"]["Name"] = [[title]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind
+G2L["28"] = Instance.new("TextButton", G2L["3"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(109, 112, 132);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(0.6, 0, 0.15, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[]];
+G2L["28"]["Name"] = [[Keybind]];
+G2L["28"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["29"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.UIStroke
+G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
+G2L["2a"]["Thickness"] = 3;
+G2L["2a"]["Color"] = Color3.fromRGB(57, 59, 69);
+G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2a"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Title
+G2L["2b"] = Instance.new("TextLabel", G2L["28"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["TextScaled"] = true;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundTransparency"] = 1;
+G2L["2b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2b"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[hud toggle:]];
+G2L["2b"]["Name"] = [[Title]];
+G2L["2b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar
+G2L["2c"] = Instance.new("Frame", G2L["28"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2c"]["Size"] = UDim2.new(0.15, 0, 0.9, 0);
+G2L["2c"]["Position"] = UDim2.new(0.8, 0, 0.5, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Name"] = [[Bar]];
+G2L["2c"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.Key
+G2L["2d"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2d"]["Size"] = UDim2.new(1, 0, 0.8, 0);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[F2]];
+G2L["2d"]["Name"] = [[Key]];
+G2L["2d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.Gap
+G2L["2e"] = Instance.new("Frame", G2L["2c"]);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["2e"]["Size"] = UDim2.new(1, 0, 0, 2);
+G2L["2e"]["Position"] = UDim2.new(0.5, 0, 0.99, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Name"] = [[Gap]];
+G2L["2e"]["LayoutOrder"] = -10;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.Gap.UIGradient
+G2L["2f"] = Instance.new("UIGradient", G2L["2e"]);
+G2L["2f"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.Keybind.Bar.UICorner
+G2L["30"] = Instance.new("UICorner", G2L["2c"]);
+G2L["30"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TextBox
+G2L["31"] = Instance.new("TextButton", G2L["3"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(109, 112, 132);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0.6, 0, 0.15, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[]];
+G2L["31"]["Name"] = [[TextBox]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TextBox.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
+G2L["32"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TextBox.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["31"]);
+G2L["33"]["Thickness"] = 3;
+G2L["33"]["Color"] = Color3.fromRGB(57, 59, 69);
+G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["33"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TextBox.TextBox
+G2L["34"] = Instance.new("TextBox", G2L["31"]);
+G2L["34"]["PlaceholderColor3"] = Color3.fromRGB(192, 192, 192);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["34"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["34"]["PlaceholderText"] = [[enter webhook]];
+G2L["34"]["Size"] = UDim2.new(0.9, 0, 0.8, 0);
+G2L["34"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[]];
+G2L["34"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.creator.TextBox.TextBox.UIStroke
+G2L["35"] = Instance.new("UIStroke", G2L["34"]);
+G2L["35"]["Thickness"] = 2;
+G2L["35"]["Color"] = Color3.fromRGB(90, 90, 90);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua
+G2L["36"] = Instance.new("ModuleScript", G2L["1"]);
+G2L["36"]["Name"] = [[Lua]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad
+G2L["37"] = Instance.new("Folder", G2L["36"]);
+G2L["37"]["Name"] = [[canLoad]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135
+G2L["38"] = Instance.new("ModuleScript", G2L["37"]);
+G2L["38"]["Name"] = [[66654135]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo
+G2L["39"] = Instance.new("Frame", G2L["38"]);
+G2L["39"]["Visible"] = false;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Name"] = [[CoinInfo]];
+G2L["39"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo.Coins
+G2L["3a"] = Instance.new("TextLabel", G2L["39"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Size"] = UDim2.new(0.205, 0, 0.04, 0);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[Collected: 1000]];
+G2L["3a"]["Name"] = [[Coins]];
+G2L["3a"]["Position"] = UDim2.new(0.78691, 0, 0.03899, 44);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo.Coins.UIStroke
+G2L["3b"] = Instance.new("UIStroke", G2L["3a"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo.Hour
+G2L["3c"] = Instance.new("TextLabel", G2L["39"]);
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["TextSize"] = 14;
+G2L["3c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3c"]["TextScaled"] = true;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["BackgroundTransparency"] = 1;
+G2L["3c"]["Size"] = UDim2.new(0.205, 0, 0.04, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Text"] = [[100 coins per hour]];
+G2L["3c"]["Name"] = [[Hour]];
+G2L["3c"]["Position"] = UDim2.new(0.78691, 0, 0.07799, 44);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo.Hour.UIStroke
+G2L["3d"] = Instance.new("UIStroke", G2L["3c"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo.Status
+G2L["3e"] = Instance.new("TextLabel", G2L["39"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["BackgroundTransparency"] = 1;
+G2L["3e"]["Size"] = UDim2.new(0.205, 0, 0.04, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[Status: Collecting]];
+G2L["3e"]["Name"] = [[Status]];
+G2L["3e"]["Position"] = UDim2.new(0.78691, 0, 0, 44);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Lua.canLoad.66654135.CoinInfo.Status.UIStroke
+G2L["3f"] = Instance.new("UIStroke", G2L["3e"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main
+G2L["40"] = Instance.new("Frame", G2L["1"]);
+G2L["40"]["Visible"] = false;
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["40"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["40"]["Size"] = UDim2.new(0.5, 0, 0.6, 0);
+G2L["40"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Name"] = [[Main]];
+G2L["40"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.UICorner
+G2L["41"] = Instance.new("UICorner", G2L["40"]);
+G2L["41"]["CornerRadius"] = UDim.new(0.025, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.UIStroke
+G2L["42"] = Instance.new("UIStroke", G2L["40"]);
+G2L["42"]["Thickness"] = 3;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar
+G2L["43"] = Instance.new("CanvasGroup", G2L["40"]);
+G2L["43"]["ZIndex"] = 2;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Name"] = [[Topbar]];
+G2L["43"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.UICorner
+G2L["44"] = Instance.new("UICorner", G2L["43"]);
+G2L["44"]["CornerRadius"] = UDim.new(0.025, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main
+G2L["45"] = Instance.new("Frame", G2L["43"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["45"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Name"] = [[Main]];
+G2L["45"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main.Title
+G2L["46"] = Instance.new("TextLabel", G2L["45"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["46"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[PatchKids™ 2]];
+G2L["46"]["Name"] = [[Title]];
+G2L["46"]["Position"] = UDim2.new(0.5, 0, -0, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main.Version
+G2L["47"] = Instance.new("TextLabel", G2L["45"]);
+G2L["47"]["TextWrapped"] = true;
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["TextSize"] = 14;
+G2L["47"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["47"]["TextScaled"] = true;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["47"]["Size"] = UDim2.new(1, 0, 0.3, 0);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Text"] = [[v0.01]];
+G2L["47"]["Name"] = [[Version]];
+G2L["47"]["Position"] = UDim2.new(0.5, 0, 0.7, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Topbar.Main.UIStroke
+G2L["48"] = Instance.new("UIStroke", G2L["45"]);
+G2L["48"]["Thickness"] = 3;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List
+G2L["49"] = Instance.new("Frame", G2L["40"]);
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["49"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["49"]["Size"] = UDim2.new(1, 0, 0.825, 0);
+G2L["49"]["Position"] = UDim2.new(0.5, 0, 1, 0);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Name"] = [[List]];
+G2L["49"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.UIListLayout
+G2L["4a"] = Instance.new("UIListLayout", G2L["49"]);
+G2L["4a"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["4a"]["Padding"] = UDim.new(0.025, 0);
+G2L["4a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Welcome
+G2L["4b"] = Instance.new("TextLabel", G2L["49"]);
+G2L["4b"]["TextWrapped"] = true;
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 14;
+G2L["4b"]["TextScaled"] = true;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["BackgroundTransparency"] = 1;
+G2L["4b"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["4b"]["Size"] = UDim2.new(0.63351, 0, 0.1, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[Welcome, Admin]];
+G2L["4b"]["LayoutOrder"] = -1;
+G2L["4b"]["Name"] = [[Welcome]];
+G2L["4b"]["Position"] = UDim2.new(0.5, 0, 0.09758, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Welcome.UIScale
+G2L["4c"] = Instance.new("UIScale", G2L["4b"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Note
+G2L["4d"] = Instance.new("TextLabel", G2L["49"]);
+G2L["4d"]["TextWrapped"] = true;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextSize"] = 14;
+G2L["4d"]["TextScaled"] = true;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4d"]["TextColor3"] = Color3.fromRGB(153, 163, 255);
+G2L["4d"]["BackgroundTransparency"] = 1;
+G2L["4d"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["4d"]["Size"] = UDim2.new(0.63351, 0, 0.1, 0);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Text"] = [[Ready to enhance your experience?]];
+G2L["4d"]["Name"] = [[Note]];
+G2L["4d"]["Position"] = UDim2.new(0.5, 0, 0.24793, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Note.UIScale
+G2L["4e"] = Instance.new("UIScale", G2L["4d"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter
+G2L["4f"] = Instance.new("TextButton", G2L["49"]);
+G2L["4f"]["TextWrapped"] = true;
+G2L["4f"]["TextStrokeTransparency"] = 0;
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["TextStrokeColor3"] = Color3.fromRGB(85, 85, 85);
+G2L["4f"]["TextSize"] = 60;
+G2L["4f"]["TextScaled"] = true;
+G2L["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4f"]["Size"] = UDim2.new(0.24782, 0, 0.1, 0);
+G2L["4f"]["LayoutOrder"] = 4;
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Text"] = [[]];
+G2L["4f"]["Name"] = [[Enter]];
+G2L["4f"]["Position"] = UDim2.new(0.37609, 0, 0.55317, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.UICorner
+G2L["50"] = Instance.new("UICorner", G2L["4f"]);
+G2L["50"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.TextLabel
+G2L["51"] = Instance.new("TextLabel", G2L["4f"]);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["TextSize"] = 14;
+G2L["51"]["TextScaled"] = true;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["BackgroundTransparency"] = 1;
+G2L["51"]["Size"] = UDim2.new(1, 0, 0.69767, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Text"] = [[Verify]];
+G2L["51"]["Position"] = UDim2.new(0, 0, 0.13953, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.TextLabel.UIStroke
+G2L["52"] = Instance.new("UIStroke", G2L["51"]);
+G2L["52"]["Thickness"] = 2;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.UIStroke
+G2L["53"] = Instance.new("UIStroke", G2L["4f"]);
+G2L["53"]["Thickness"] = 2;
+G2L["53"]["Color"] = Color3.fromRGB(11, 11, 11);
+G2L["53"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Enter.Gradient
+G2L["54"] = Instance.new("UIGradient", G2L["4f"]);
+G2L["54"]["Rotation"] = 45;
+G2L["54"]["Name"] = [[Gradient]];
+G2L["54"]["Offset"] = Vector2.new(-1, 0);
+G2L["54"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(59, 255, 72)),ColorSequenceKeypoint.new(0.652, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(59, 255, 72))};
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Key
+G2L["55"] = Instance.new("TextBox", G2L["49"]);
+G2L["55"]["Name"] = [[Key]];
+G2L["55"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["TextWrapped"] = true;
+G2L["55"]["TextSize"] = 14;
+G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["TextScaled"] = true;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["55"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["55"]["PlaceholderText"] = [[Enter access key]];
+G2L["55"]["Size"] = UDim2.new(0.41885, 0, 0.1, 0);
+G2L["55"]["Position"] = UDim2.new(0.5, 0, 0.38649, 0);
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Text"] = [[]];
+G2L["55"]["LayoutOrder"] = 2;
+G2L["55"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch
+G2L["56"] = Instance.new("Frame", G2L["49"]);
+G2L["56"]["Visible"] = false;
+G2L["56"]["Size"] = UDim2.new(1, 0, 0.1, 0);
+G2L["56"]["Position"] = UDim2.new(-0, 0, 0.53838, 0);
+G2L["56"]["Name"] = [[Fetch]];
+G2L["56"]["LayoutOrder"] = 3;
+G2L["56"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.Icon
+G2L["57"] = Instance.new("TextLabel", G2L["56"]);
+G2L["57"]["TextWrapped"] = true;
+G2L["57"]["BorderSizePixel"] = 0;
+G2L["57"]["TextSize"] = 18;
+G2L["57"]["TextScaled"] = true;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 31);
+G2L["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["57"]["TextColor3"] = Color3.fromRGB(46, 252, 111);
+G2L["57"]["BackgroundTransparency"] = 1;
+G2L["57"]["Size"] = UDim2.new(0.06, 0, 0.7, 0);
+G2L["57"]["Text"] = [[✓]];
+G2L["57"]["Name"] = [[Icon]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.Icon.UICorner
+G2L["58"] = Instance.new("UICorner", G2L["57"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.txt
+G2L["59"] = Instance.new("TextLabel", G2L["56"]);
+G2L["59"]["TextWrapped"] = true;
+G2L["59"]["TextSize"] = 13;
+G2L["59"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["59"]["TextTransparency"] = 0.25;
+G2L["59"]["TextScaled"] = true;
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["BackgroundTransparency"] = 1;
+G2L["59"]["Size"] = UDim2.new(0.46863, -46, 1, 0);
+G2L["59"]["Text"] = [[Fetching whitelist...]];
+G2L["59"]["Name"] = [[txt]];
+G2L["59"]["Position"] = UDim2.new(0, 219, 0, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Fetch.UIListLayout
+G2L["5a"] = Instance.new("UIListLayout", G2L["56"]);
+G2L["5a"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["5a"]["Padding"] = UDim.new(0.02, 0);
+G2L["5a"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["5a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["5a"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Line
+G2L["5b"] = Instance.new("Frame", G2L["49"]);
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["Size"] = UDim2.new(0.4, 0, 0, 1);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Name"] = [[Line]];
+G2L["5b"]["LayoutOrder"] = 3;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Line.UIGradient
+G2L["5c"] = Instance.new("UIGradient", G2L["5b"]);
+G2L["5c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(0.500, 0),NumberSequenceKeypoint.new(1.000, 1)};
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.List.Barrier
+G2L["5d"] = Instance.new("Frame", G2L["49"]);
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["Size"] = UDim2.new(0.4, 0, 0.3, 0);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Name"] = [[Barrier]];
+G2L["5d"]["LayoutOrder"] = 5;
+G2L["5d"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.UIAspectRatioConstraint
+G2L["5e"] = Instance.new("UIAspectRatioConstraint", G2L["40"]);
+G2L["5e"]["AspectRatio"] = 1.5;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Note2
+G2L["5f"] = Instance.new("TextLabel", G2L["40"]);
+G2L["5f"]["TextWrapped"] = true;
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["TextSize"] = 14;
+G2L["5f"]["TextScaled"] = true;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5f"]["TextColor3"] = Color3.fromRGB(192, 192, 192);
+G2L["5f"]["BackgroundTransparency"] = 1;
+G2L["5f"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["5f"]["Size"] = UDim2.new(0.63351, 0, 0.075, 0);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Text"] = [[PatchKids™ Early Access]];
+G2L["5f"]["LayoutOrder"] = 10;
+G2L["5f"]["Name"] = [[Note2]];
+G2L["5f"]["Position"] = UDim2.new(0.5, 0, 0.98, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Main.Note2.UIScale
+G2L["60"] = Instance.new("UIScale", G2L["5f"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Notifications
+G2L["61"] = Instance.new("Frame", G2L["1"]);
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["AnchorPoint"] = Vector2.new(1, 1);
+G2L["61"]["Size"] = UDim2.new(0.2, 0, 0.2, 0);
+G2L["61"]["Position"] = UDim2.new(1, 0, 1, 0);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Name"] = [[Notifications]];
+G2L["61"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Notifications.UIListLayout
+G2L["62"] = Instance.new("UIListLayout", G2L["61"]);
+G2L["62"]["Padding"] = UDim.new(0.1, 0);
+G2L["62"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Sounds
+G2L["63"] = Instance.new("Folder", G2L["1"]);
+G2L["63"]["Name"] = [[Sounds]];
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game
+G2L["64"] = Instance.new("Frame", G2L["1"]);
+G2L["64"]["Visible"] = false;
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["64"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["64"]["Size"] = UDim2.new(0.5, 0, 0.6, 0);
+G2L["64"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["64"]["Name"] = [[Game]];
+G2L["64"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.UICorner
+G2L["65"] = Instance.new("UICorner", G2L["64"]);
+G2L["65"]["CornerRadius"] = UDim.new(0.025, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.UIStroke
+G2L["66"] = Instance.new("UIStroke", G2L["64"]);
+G2L["66"]["Thickness"] = 3;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar
+G2L["67"] = Instance.new("CanvasGroup", G2L["64"]);
+G2L["67"]["ZIndex"] = 2;
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Name"] = [[Topbar]];
+G2L["67"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.UICorner
+G2L["68"] = Instance.new("UICorner", G2L["67"]);
+G2L["68"]["CornerRadius"] = UDim.new(0.025, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main
+G2L["69"] = Instance.new("Frame", G2L["67"]);
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["69"]["Size"] = UDim2.new(1, 0, 0.11427, 0);
+G2L["69"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Name"] = [[Main]];
+G2L["69"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Title
+G2L["6a"] = Instance.new("TextLabel", G2L["69"]);
+G2L["6a"]["TextWrapped"] = true;
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["TextSize"] = 14;
+G2L["6a"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["6a"]["TextScaled"] = true;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["BackgroundTransparency"] = 1;
+G2L["6a"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["6a"]["Size"] = UDim2.new(1, 0, 0.7, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Text"] = [[PatchKids™ 2]];
+G2L["6a"]["Name"] = [[Title]];
+G2L["6a"]["Position"] = UDim2.new(0.5, 0, -0, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Version
+G2L["6b"] = Instance.new("TextLabel", G2L["69"]);
+G2L["6b"]["TextWrapped"] = true;
+G2L["6b"]["BorderSizePixel"] = 0;
+G2L["6b"]["TextSize"] = 14;
+G2L["6b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["6b"]["TextScaled"] = true;
+G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6b"]["BackgroundTransparency"] = 1;
+G2L["6b"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["6b"]["Size"] = UDim2.new(1, 0, 0.3, 0);
+G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6b"]["Text"] = [[v0.01]];
+G2L["6b"]["Name"] = [[Version]];
+G2L["6b"]["Position"] = UDim2.new(0.5, 0, 0.7, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.UIStroke
+G2L["6c"] = Instance.new("UIStroke", G2L["69"]);
+G2L["6c"]["Thickness"] = 3;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close
+G2L["6d"] = Instance.new("TextButton", G2L["69"]);
+G2L["6d"]["BorderSizePixel"] = 0;
+G2L["6d"]["TextSize"] = 14;
+G2L["6d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 98, 93);
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["6d"]["Size"] = UDim2.new(0.9, 0, 0.9, 0);
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["Text"] = [[]];
+G2L["6d"]["Name"] = [[Close]];
+G2L["6d"]["Position"] = UDim2.new(0.955, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.UIAspectRatioConstraint
+G2L["6e"] = Instance.new("UIAspectRatioConstraint", G2L["6d"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.UICorner
+G2L["6f"] = Instance.new("UICorner", G2L["6d"]);
+G2L["6f"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.UIStroke
+G2L["70"] = Instance.new("UIStroke", G2L["6d"]);
+G2L["70"]["Thickness"] = 3;
+G2L["70"]["Color"] = Color3.fromRGB(157, 59, 57);
+G2L["70"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["70"]["BorderStrokePosition"] = Enum.BorderStrokePosition.Center;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Main.Close.ImageLabel
+G2L["71"] = Instance.new("ImageLabel", G2L["6d"]);
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["71"]["Image"] = [[rbxassetid://107435544084720]];
+G2L["71"]["Size"] = UDim2.new(0.8, 0, 0.8, 0);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["BackgroundTransparency"] = 1;
+G2L["71"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Tabs
+G2L["72"] = Instance.new("ScrollingFrame", G2L["67"]);
+G2L["72"]["Active"] = true;
+G2L["72"]["ScrollingDirection"] = Enum.ScrollingDirection.X;
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["72"]["Name"] = [[Tabs]];
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
+G2L["72"]["ClipsDescendants"] = false;
+G2L["72"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["72"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Position"] = UDim2.new(0, 0, 0.11349, 0);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["BackgroundTransparency"] = 1;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Topbar.Tabs.UIListLayout
+G2L["73"] = Instance.new("UIListLayout", G2L["72"]);
+G2L["73"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["73"]["Padding"] = UDim.new(0.02, 0);
+G2L["73"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["73"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["73"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.UIAspectRatioConstraint
+G2L["74"] = Instance.new("UIAspectRatioConstraint", G2L["64"]);
+G2L["74"]["AspectRatio"] = 1.5;
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Note2
+G2L["75"] = Instance.new("TextLabel", G2L["64"]);
+G2L["75"]["TextWrapped"] = true;
+G2L["75"]["ZIndex"] = 2;
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["TextSize"] = 14;
+G2L["75"]["TextScaled"] = true;
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["75"]["TextColor3"] = Color3.fromRGB(192, 192, 192);
+G2L["75"]["BackgroundTransparency"] = 1;
+G2L["75"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["75"]["Size"] = UDim2.new(0.63351, 0, 0.075, 0);
+G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["75"]["Text"] = [[PatchKids™ Early Access]];
+G2L["75"]["LayoutOrder"] = 10;
+G2L["75"]["Name"] = [[Note2]];
+G2L["75"]["Position"] = UDim2.new(0.5, 0, 0.98, 0);
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Note2.UIScale
+G2L["76"] = Instance.new("UIScale", G2L["75"]);
+
+
+
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.Game.Tabs
+G2L["77"] = Instance.new("Folder", G2L["64"]);
+G2L["77"]["Name"] = [[Tabs]];
+
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["3"]] = {
+Closure = function()
+    local script = G2L["3"];local TweenService = game:GetService("TweenService")
+local Debris = game:GetService("Debris")
+local UserInputService = game:GetService("UserInputService")
+
+local module = {}
+module.HUD = nil
+
+_G.activeTab = "universal"
+_G.createdTabs = {}
+_G.Draggable = {}
+
+module.GetHUD = function()
+	local hud = script.Parent
+	
+	module.HUD = hud
+	return hud
+end
+
+module.Button = function(button : TextButton, callback : () -> ())
+	local scale = Instance.new("UIScale", button)
+	
+	button.AutoButtonColor = false
+	
+	button.MouseEnter:Connect(function()
+		local Gradient : UIGradient = button:FindFirstChild("Gradient")
+		if Gradient then
+			Gradient.Offset = Vector2.new(-1,0)
+			TweenService:Create(Gradient, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {Offset = Vector2.new(1,0)}):Play()
+		end
+	end)
+	button.MouseLeave:Connect(function()
+		TweenService:Create(scale, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Scale = 1}):Play()
+	end)
+	button.MouseButton1Down:Connect(function()
+		TweenService:Create(scale, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Scale = 0.95}):Play()
+	end)
+	button.MouseButton1Up:Connect(function()
+		TweenService:Create(scale, TweenInfo.new(0.1, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out), {Scale = 1}):Play()
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		if button:GetAttribute("Disabled") then return end
+		callback()
+	end)
+end
+
+module.Notification = function(text : string)
+	local new = script.Notification:Clone()
+	
+	new.Move.Text.Text = text
+	
+	new.Parent = module.HUD.Notifications
+	new.UIScale.Scale = 0
+	
+	new.Move:TweenPosition(UDim2.new(0.95,0,0.5,0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.25, true)
+	TweenService:Create(new.UIScale, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Scale = 1}):Play()
+	
+	Debris:AddItem(new, 3)
+	
+	--module.PlaySound(130467592920597)
+	
+	task.delay(2.5, function()
+		new.Move:TweenPosition(UDim2.new(2,0,0.5,0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.2, true)
+		task.wait(0.2)
+		new.Move:Destroy()
+		TweenService:Create(new.UIScale, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Scale = 0}):Play()
+	end)
+end
+
+module.PlaySound = function(soundID)
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://" .. soundID
+	sound.Parent = module.HUD.Sounds
+	sound:Play()
+	Debris:AddItem(sound, 3)
+end
+
+module.SwitchButton = function(button, value)
+	local stroke = button:FindFirstChild("UIStroke")
+	
+	if value then
+		stroke.Color = Color3.fromRGB(100, 135, 83)
+		button.BackgroundColor3 = Color3.fromRGB(162, 220, 135)
+	else
+		stroke.Color = Color3.fromRGB(56, 58, 68)
+		button.BackgroundColor3 = Color3.fromRGB(108, 111, 131)
+	end	
+end
+
+module.SwitchTab = function(id)
+	local tabs = module.HUD.Game.Tabs
+	local activeTab = _G.activeTab
+	if activeTab == "" then
+		_G.activeTab = id
+		
+		local tab = tabs:FindFirstChild(id)
+		if tab then
+			tab.Visible = true
+		end
+	else
+		local tab = tabs:FindFirstChild(activeTab)
+		if tab then
+			tab.Visible = false
+		end
+		
+		_G.activeTab = id
+		local tab = tabs:FindFirstChild(id)
+		if tab then
+			tab.Visible = true
+		end
+	end
+end
+
+module.NewTab = function(id, image, layout)
+	local button = script.TabButton:Clone()
+	button.ImageLabel.Image = "rbxassetid://"..image
+	button.Name = id
+	button.Parent = module.HUD.Game.Topbar.Tabs
+	button.LayoutOrder = layout or 0
+	
+	local frame = script.Tab:Clone()
+	frame.Name = id
+	frame.Parent = module.HUD.Game.Tabs
+	frame.Visible = false
+	
+	if id == "universal" then
+		frame.Visible = true
+		module.SwitchButton(button, true)
+	end
+	
+	_G.createdTabs[id] = frame
+	
+	module.Button(button, function()
+		module.SwitchTab(id)
+		
+		for i, b in module.HUD.Game.Topbar.Tabs:GetChildren() do
+			if b:IsA("TextButton") then
+				module.SwitchButton(b, false)
+			end
+		end
+		
+		module.SwitchButton(button, true)
+	end)
+	
+	return frame
+end
+
+module.NewTitle = function(id, tabId)
+	local title = script.title:Clone()
+	title.Name = id
+	title.Text = "~ "..id.." ~"
+	
+	title.Parent = _G.createdTabs[tabId]
+	
+	title.LayoutOrder = #_G.createdTabs[tabId]:GetChildren()
+end
+
+module.NewButton = function(id, tabId, callback, keycode)
+	local button = script.Classic:Clone()
+	button.Name = id
+	button.Title.Text = id
+	button.Parent = _G.createdTabs[tabId]
+	
+	button.LayoutOrder = #_G.createdTabs[tabId]:GetChildren()
+	
+	module.Button(button, callback)
+	
+	module.AddMover(button)
+	
+	if keycode then
+		button.Title.Text = "loading"
+		
+		button.Bar.Key.Text = "None"
+		button:SetAttribute("key", "")
+		button.Bar.Visible = true
+		
+		button.Title.Text = id
+		
+		button.Bar.TextButton.Activated:Connect(function()
+			button.Bar.Key.Text = ".."
+			local con
+			con = UserInputService.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.Keyboard then
+					button:SetAttribute("key", input.KeyCode.Name)
+					button.Bar.Key.Text = input.KeyCode.Name
+					
+					con:Disconnect()
+				end
+			end)
+		end)
+		
+		UserInputService.InputBegan:Connect(function(input, p)
+			if p then return end
+			if button:GetAttribute("key") ~= "" and input.KeyCode == Enum.KeyCode[button:GetAttribute("key")] then
+				callback()
+			end
+		end)
+	end
+	
+	return button
+end
+
+module.NewToggle = function(id, tabId, callback)
+	local button = script.Toggle:Clone()
+	button.Name = id
+	button.Parent = _G.createdTabs[tabId]
+	
+	button.LayoutOrder = #_G.createdTabs[tabId]:GetChildren()
+	
+	button:SetAttribute("toggle", false)
+
+	module.Button(button, function()
+		local changeTo = not button:GetAttribute("toggle")
+		button:SetAttribute("toggle", changeTo)
+		
+		callback()
+	end)
+	
+	button:GetAttributeChangedSignal("toggle"):Connect(function()
+		if button:GetAttribute("toggle") then
+			button.Bar.BackgroundColor3 = Color3.fromRGB(107, 255, 107)
+		else
+			button.Bar.BackgroundColor3 = Color3.fromRGB(255, 107, 107)
+		end
+	end)
+	
+	module.AddMover(button)
+	
+	button.Title.Text = id
+	
+	return button
+end
+
+module.NewKeybind = function(id, tabId, default, callback)
+	local button = script.Keybind:Clone()
+	button.Name = id
+	button.Parent = _G.createdTabs[tabId]
+	button.LayoutOrder = #_G.createdTabs[tabId]:GetChildren()
+	button:SetAttribute("key", default)
+	
+	module.Button(button, function()
+		button.Bar.Key.Text = ".."
+		
+		local chosenKey = nil
+		local con
+		con = UserInputService.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.Keyboard then			
+				con:Disconnect()
+				
+				chosenKey = input.KeyCode.Name
+				button:SetAttribute("key", chosenKey)
+				button.Bar.Key.Text = chosenKey
+				task.delay(0.1, function()
+					callback(chosenKey)
+				end)
+			end
+		end)
+	end)
+	
+	module.AddMover(button)
+	
+	button.Title.Text = id
+	button.Bar.Key.Text = default
+end
+
+module.NewTextBox = function(id, tabId)
+	local button = script.TextBox:Clone()
+	button.Name = id
+	button.Parent = _G.createdTabs[tabId]
+	
+	return button
+end
+
+module.AddMover = function(button)
+	local textLabel = button:WaitForChild("Title")
+	local icon = button:WaitForChild("Bar")
+
+	local PADDING = 10 
+
+	local function update()
+		local textRightEdge = (textLabel.TextBounds.X / 2)
+		local xOffset = textRightEdge + PADDING + (icon.AbsoluteSize.X / 2)
+
+		icon.Position = UDim2.new(0.5, xOffset, 0.5, 0)
+	end
+
+	update()
+
+	textLabel:GetPropertyChangedSignal("TextBounds"):Connect(update)
+end
+
+module.MakeDragable = function(button)
+	local dragging = false
+	local dragInput, mousePos, framePos
+	
+	local function update(input)
+		local delta = input.Position - mousePos
+		button.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+	end
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			mousePos = input.Position
+			framePos = button.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+
+return module
+end;
+};
+G2L_MODULES[G2L["36"]] = {
+Closure = function()
+    local script = G2L["36"];local module = {}
+
+local folder = script.canLoad
+local creator = require(script.Parent.creator)
+
+local ui = creator.GetHUD()
+
+module.RemoveOtherAssets = function(ignore)
+	for _, v in folder:GetChildren() do
+		if v == ignore then continue end
+		v:Destroy()
+	end
+end
+
+module.BeginLoadingGame = function()
+	local this = game.GameId
+	if not folder:FindFirstChild(this) then return end
+	
+	local gameModule = require(folder:FindFirstChild(this))
+
+	gameModule.Load(creator)
+	module.RemoveOtherAssets(folder:FindFirstChild(this))
+end
+
+creator.Button(ui.Game.Topbar.Main.Close, function()
+	ui.Game.Visible = false
+end)
+
+local universal = creator.NewTab("universal", 137327770486401)
+
+local fly
+creator.NewTitle("Player", "universal")
+
+
+
+return module
+end;
+};
+G2L_MODULES[G2L["38"]] = {
+Closure = function()
+    local script = G2L["38"];local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local PathfindingService = game:GetService("PathfindingService")
+local ChatService = game:GetService("Chat")
+
+local player = Players.LocalPlayer
+
+local module = {}
+module.creator = require(script.Parent.Parent.Parent.creator)
+module.Receiver = Instance.new("BindableEvent")
+module.HUD = nil
+
+module.Global = {
+	using = false;
+	espToggle = false;
+	gunDropToggle = false;
+	autograbgun = false;
+	
+	coinAutofarm = false;
+	unsafe_coinAutofarm = false;
+	
+	EVENT_autoUnbox = false;
+	
+	unbox_webhook = "";
+	
+	Roles = {}
+}
+
+local RarityColors = {
+	["Common"] = Color3.fromRGB(241, 241, 241),
+	["Unknown"] = Color3.fromRGB(241, 241, 241),
+	["Uncommon"] = Color3.fromRGB(107, 255, 250),
+	["Rare"] = Color3.fromRGB(65, 255, 81),
+	["Legendary"] = Color3.fromRGB(255, 33, 33),
+	["Godly"] = Color3.fromRGB(255, 61, 252)
+}
+
+module.Load = function(creator)
+	module.creator = creator
+	module.HUD = creator.GetHUD()
+	
+	module.Receiver:Fire()
+end
+
+local function predictFormula(targetPart, playerPing)
+	return targetPart.Position + (targetPart.Velocity * playerPing * 1.1)
+end
+
+local function getClosestPlayer()
+	local character    = player.Character
+	if not character then return nil end
+
+	local root            = character:WaitForChild("HumanoidRootPart")
+	local closestPlayer   = nil
+	local closestDistance = math.huge
+
+	for _, plr in Players:GetPlayers() do
+		if plr ~= player and plr.Character then
+			local humanoid = plr.Character:FindFirstChildOfClass("Humanoid")
+			local hrp      = plr.Character:FindFirstChild("HumanoidRootPart")
+			if humanoid and hrp and humanoid.Health > 0 then
+				local distance = (hrp.Position - root.Position).Magnitude
+				if distance < closestDistance then
+					closestDistance = distance
+					closestPlayer   = plr
+				end
+			end
+		end
+	end
+
+	return closestPlayer
+end
+
+
+local function getRole(plr)
+	local plr = plr or player
+	
+	local Registered = module.Global.Roles[plr.Name]
+	if not Registered then
+		local event = ReplicatedStorage:FindFirstChild("GetPlayerData", true)
+		if not event then return end
+
+		local roles = event:InvokeServer()
+		local playerRole = roles[plr.Name]
+		if not playerRole then return end
+
+		return playerRole.Role
+	end
+	
+	return Registered
+end
+
+local function getMurderer()
+	for _, plr in Players:GetPlayers() do
+		local role = getRole(plr)
+		if role == "Murderer" then
+			return plr
+		end
+	end
+end
+
+local function getSheriff()
+	for _, plr in Players:GetPlayers() do
+		local role = getRole(plr)
+		if role == "Sheriff" then
+			return plr
+		end
+	end
+end
+
+local function grab_gun()	
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gunDrop = workspace:FindFirstChild("GunDrop", true)
+	
+	if not gunDrop then module.creator.Notification("GunDrop not found") return end
+	if getRole() ~= "Innocent" then module.creator.Notification("You aren't Innocent") return end
+	
+	firetouchinterest(character.PrimaryPart, gunDrop, 0)
+end
+
+module.Receiver.Event:Connect(function()
+	local creator = module.creator
+	module.Receiver:Destroy()
+	
+	creator.PlaySound(128629124431651)
+	
+	-- TABS --
+	local tab = creator.NewTab("main", 84943932817353, 1)
+	local eventTab = creator.NewTab("event", 16426213685, 2)
+	
+	-- BUTTONS --
+	local esp
+	local gundrop
+	local autograpgun
+	
+	local grabgun
+	local silentShoot
+	local tpShootMurderer
+	
+	local killClosest
+	local killAll
+	
+	local blurtRoles
+	
+	local coinAutofarm
+	local unsafeAutofarm
+	
+	-- Visuals --
+	creator.NewTitle("Visuals", "main")
+	
+	esp = creator.NewToggle("player esp", "main", function()
+		local value = esp:GetAttribute("toggle")
+		module.Global.espToggle = value
+	end)
+	
+	gundrop = creator.NewToggle("gundrop esp", "main", function()
+		local value = gundrop:GetAttribute("toggle")
+		module.Global.gunDropToggle = value
+	end)
+	
+	-- Sheriff --
+	creator.NewTitle("Sheriff", "main")
+	
+	grabgun = creator.NewButton("grab gun", "main", grab_gun, true)
+	autograpgun = creator.NewToggle("auto-grab gun", "main", function()
+		local value = autograpgun:GetAttribute("toggle")
+		module.Global.autograbgun = value
+	end)
+	silentShoot = creator.NewButton("shoot murd", "main", module.SilentShoot, true)
+	tpShootMurderer = creator.NewButton("tp-kill murd", "main", module.TpShoot, true)
+	
+	-- Murderer --
+	creator.NewTitle("Murderer", "main")
+	
+	killClosest = creator.NewButton("kill closest", "main", module.KillClosest, true)
+	killAll = creator.NewButton("kill all", "main", module.KillAll, true)
+	
+	-- Innocent --
+	creator.NewTitle("Innocent", "main")
+	
+	blurtRoles = creator.NewButton("blurt roles", "main", function()
+		local murderer = getMurderer()
+		local sheriff  = getSheriff()
+
+		if murderer and sheriff then
+			local TextChatService = game:GetService("TextChatService")
+			local channels = TextChatService.TextChannels
+
+			local channel = channels:FindFirstChild("RBXHere")
+				or channels:FindFirstChild("RBXGeneral")
+
+			if channel then
+				channel:SendAsync(`Murderer: {murderer.Name}`)
+				task.wait(0.5)
+				channel:SendAsync(`Sheriff: {sheriff.Name}`)
+			end
+		end
+	end)
+	
+	-- Autofarms --
+	creator.NewTitle("Autofarms", "main")
+	
+	coinAutofarm = creator.NewToggle("coin autofarm (safe)", "main", function()
+		local value = coinAutofarm:GetAttribute("toggle")
+		module.Global.coinAutofarm = value
+	end)
+	
+	unsafeAutofarm = creator.NewToggle("coin autofarm (unsafe)", "main", function()
+		local value = unsafeAutofarm:GetAttribute("toggle")
+		module.Global.unsafe_coinAutofarm = value
+		module.unsafeAutofarmToggle(value)
+	end)
+	
+	-- EVENT TAB --
+	creator.NewTitle("Summer 2026", "event")
+	
+	local EVENT_autoUnbox
+	local webhook = creator.NewTextBox("unbox webhook", "event")
+	EVENT_autoUnbox = creator.NewToggle("Auto unbox Summer Box", "event", function()
+		local value = EVENT_autoUnbox:GetAttribute("toggle")
+		module.Global.EVENT_autoUnbox = value
+	end)
+	
+	local WEBHOOK_FILE = "PatchKids2/webhook.txt"
+
+	if isfile(WEBHOOK_FILE) then
+		local saved = readfile(WEBHOOK_FILE)
+		if saved ~= "" then
+			webhook.TextBox.Text = saved
+			module.Global.unbox_webhook = saved
+			module.creator.Notification("Loaded saved webhook!")
+		end
+	end
+	
+	webhook.TextBox.Changed:Connect(function()
+		local url = webhook.TextBox.Text
+		module.Global.unbox_webhook = url
+		if url ~= "" then
+			writefile(WEBHOOK_FILE, url)
+		end
+	end)
+	
+	-- Func Loaders --
+	
+	module.EventFuncl()
+	module.RegularFuncl()
+	module.espFuncl()
+	module.CoinAutofarmFuncl()
+	module.unsafeAutofarmFuncl()
+end)
+
+module.SilentShoot = function()
+	local murderer = getMurderer()
+	if not murderer then module.creator.Notification("No Murderer found") return end
+	
+	local murdCharacter = murderer.Character or murderer.CharacterAdded:Wait()
+	local char = player.Character or player.CharacterAdded:Wait()
+	
+	local root = murdCharacter:FindFirstChild("HumanoidRootPart")
+	if not root then return end
+	
+	local gun = char:FindFirstChild("Gun")
+	if not gun then
+		local backpackGun = player.Backpack:FindFirstChild("Gun")
+		if backpackGun then
+			backpackGun.Parent = char
+			gun = backpackGun
+		end
+	end
+	
+	if not gun then return end
+
+	local ping = player:GetNetworkPing()
+	local fromPos = gun.Handle.CFrame
+	local targetPos = predictFormula(root, ping)
+	
+	gun.Shoot:FireServer(fromPos, CFrame.new(targetPos))
+end
+
+module.TpShoot = function()
+	if module.Global.using then return end
+	
+	local murderer = getMurderer()
+	if not murderer then module.creator.Notification("No Murderer found") return end
+
+	local murdCharacter = murderer.Character or murderer.CharacterAdded:Wait()
+	local char = player.Character or player.CharacterAdded:Wait()
+
+	local root = murdCharacter:FindFirstChild("HumanoidRootPart")
+	if not root then return end
+
+	local gun = char:FindFirstChild("Gun")
+	if not gun then
+		local backpackGun = player.Backpack:FindFirstChild("Gun")
+		if backpackGun then
+			backpackGun.Parent = char
+			gun = backpackGun
+		end
+	end
+
+	if not gun then return end
+	
+	module.Global.using = true
+	
+	local lastPos = char.PrimaryPart.CFrame
+	char:PivotTo(root.CFrame * CFrame.new(0, 0, 4))
+
+	local ping = player:GetNetworkPing()
+	local fromPos = root.Position + Vector3.new(1,1,1)
+	local targetPos = predictFormula(root, ping)
+
+	gun.Shoot:FireServer(fromPos, CFrame.new(targetPos))
+	task.delay(0.5, function()
+		module.Global.using = false
+		char:PivotTo(lastPos)
+	end)
+end
+
+module.KillClosest = function()
+	if getRole() ~= "Murderer" then module.creator.Notification("You aren't Murderer") return end
+	local closestTarget = getClosestPlayer()
+	if not closestTarget then module.creator.Notification("No closest player found") return end
+	
+	local isInBackpack = player.Backpack:FindFirstChild("Knife")
+	if isInBackpack then isInBackpack.Parent = player.Character end
+
+	local knife = player.Character.Knife
+	knife.Events.KnifeStabbed:FireServer()
+	knife.Events.HandleTouched:FireServer(closestTarget.Character.PrimaryPart)
+end
+
+module.KillAll = function()
+	if getRole() ~= "Murderer" then module.creator.Notification("You aren't Murderer") return end
+
+	local char   = player.Character
+	local knife  = player.Backpack:FindFirstChild("Knife")
+	if knife then knife.Parent = char end
+
+	knife = char.Knife
+	for _, v in game.Players:GetPlayers() do
+		if v ~= player then
+			knife.Events.KnifeStabbed:FireServer()
+			knife.Events.HandleTouched:FireServer(v.Character.PrimaryPart)
+		end
+	end
+end
+
+module.EventFuncl = function()
+	local Sync = nil
+	local isInternal = false
+if getgc then
+	for _, v in getgc(true) do
+		if type(v) == "table" 
+			and rawget(v, "Weapons")
+			and rawget(v, "Item")
+			and rawget(v, "Weapons") == rawget(v, "Item")
+			and rawget(v, "Pets")
+			and rawget(v, "MysteryBox") then
+			Sync = v
+			isInternal = true
+			print("found Sync!")
+			break
+		end
+	end
+	end
+	if not isInternal then
+		Sync = nil
+		warn("Sync is not able to be required with your current Executor.")
+	end
+	
+	local UNBOX_INTERVAL  = 5
+	local unboxTimer  = 0
+	
+	local function color3ToDiscord(color: Color3): number
+		local r = math.round(color.R * 255)
+		local g = math.round(color.G * 255)
+		local b = math.round(color.B * 255)
+
+		return (r * 65536) + (g * 256) + b
+	end
+	
+	local function getItemImage(assetId)
+		local s, response = pcall(request, {
+			Url = "https://thumbnails.roblox.com/v1/assets?assetIds=" .. assetId .. "&returnPolicy=PlaceHolder&size=250x250&format=Png&isCircular=false",
+			Method = "GET"
+		})
+
+		if not s then return nil end
+
+		local s2, data = pcall(game:GetService("HttpService").JSONDecode, game:GetService("HttpService"), response.Body)
+		if not s2 then return nil end
+
+		if data and data.data and data.data[1] then
+			return data.data[1].imageUrl
+		end
+
+		return nil
+	end
+	
+	local function SendMessage(url, itemName, rarity, playerName, id)
+		local http = game:GetService("HttpService")
+
+		local now = DateTime.now()
+		local formatted = now:FormatLocalTime("M/D/YY, h:mm A", "en-us")
+		
+		local imgID = 584555920
+		local itemName = itemName
+		local rarity = rarity
+		
+		local itemType = "Item"
+		if id then
+			if id:find("_K_") then
+				itemType = "Knife"
+			elseif id:find("_G_") then
+				itemType = "Gun"
+			end
+		end
+		
+		local EventEmojis = {
+			["Summer"] = "🍉",
+			["Halloween"] = "🎃",
+			["Christmas"] = "⛄",
+			["Unknown"] = "❓",
+		}
+		
+		local Event = "❓"
+		local Year = "Unknown"
+		
+		if Sync then
+			local ITEMDATA = Sync.Weapons[id]
+			if ITEMDATA then
+				imgID = ITEMDATA.ItemID
+				itemName = ITEMDATA.ItemName
+				rarity = ITEMDATA.Rarity or "Common"
+				Year = ITEMDATA.Year or "Unknown"
+				Event = EventEmojis[ITEMDATA.Event or "Unknown"] or "❓"
+				
+				warn("Found item data for:", id)
+			end
+		end
+		
+		local itemImageUrl = getItemImage(imgID) or ""
+
+		local data = {
+			["content"] = "**" .. playerName .. "** just unboxed a " .. itemType .. "!",
+			["embeds"] = {
+				{
+					["title"] = "Auto Unbox",
+					["description"] = "Unboxed: **" .. itemName .. "**\nRarity: " .. rarity .. "\nEvent: " .. Event .. Year,
+					["color"] = color3ToDiscord(RarityColors[rarity] or RarityColors["Common"]),
+					["thumbnail"] = {
+						["url"] = itemImageUrl
+					},
+					["footer"] = {
+						["text"] = "Powered by PatchKids™ • " .. formatted
+					}
+				}
+			}
+		}
+
+		local body = http:JSONEncode(data)
+		request({
+			Url = url,
+			Method = "POST",
+			Headers = { ["Content-Type"] = "application/json" },
+			Body = body
+		})
+	end
+	
+	local function FixName(id)
+		local base = id:gsub("_(%d+)$", "")
+
+		local parts = {}
+		for part in string.gmatch(base, "[^_]+") do
+			table.insert(parts, part)
+		end
+
+		if #parts == 1 then
+			return parts[1]
+		end
+
+		local typeCode = parts[2]
+
+		if typeCode == "K" then
+			return parts[1] .. " Knife"
+		elseif typeCode == "G" then
+			return parts[1] .. " Gun"
+		else
+			return parts[1]
+		end
+	end
+	
+	RunService.Heartbeat:Connect(function(dt)
+		unboxTimer = unboxTimer + dt
+		
+		if unboxTimer >= UNBOX_INTERVAL then
+			unboxTimer = 0
+			
+			if module.Global.EVENT_autoUnbox then
+				local hasWebhook = module.Global.unbox_webhook ~= "" and module.Global.unbox_webhook ~= " "
+				local args = {
+					"Summer2026Box",
+					"MysteryBox",
+					"SummerKey2026"
+				}
+				
+				local unboxResult = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Shop").OpenCrate:InvokeServer(unpack(args))
+				if unboxResult then
+					if hasWebhook then
+						
+						local info = nil
+						if Sync then
+							local ITEMDATA = Sync.Weapons[unboxResult]
+							if ITEMDATA then
+								info = ITEMDATA
+							end
+						end
+						
+						if info then
+							local displayName = info.ItemName
+							local rarity = info.Rarity
+							SendMessage(module.Global.unbox_webhook, displayName, rarity, player.Name, unboxResult)
+						else
+							local fixedName = FixName(unboxResult)
+							SendMessage(module.Global.unbox_webhook, fixedName, "Unknown", player.Name, unboxResult)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+
+module.RegularFuncl = function()
+	RunService.Heartbeat:Connect(function()
+		if module.Global.autograbgun then
+			local gun = workspace:FindFirstChild("GunDrop", true)
+			if gun then
+				grab_gun()
+			end
+		end
+	end)
+end
+
+module.espFuncl = function()
+	local event = ReplicatedStorage:FindFirstChild("GetPlayerData", true)
+	
+	local function IsAlive(v)
+
+		if not v.Killed and not v.Dead then
+			return true
+		else
+			return nil
+		end
+	end
+	
+	local function CreateLabel()
+		for i, v in Players:GetPlayers() do
+			if (v ~= player and v and v.Parent and v.Character and v.Character:FindFirstChild("Head")) and not v.Character:WaitForChild("Head"):FindFirstChild("espUser") then
+				local billboard = Instance.new("BillboardGui", v.Character.Head)
+				billboard.Name = "espUser"
+				billboard.Size = UDim2.new(4,0,1,0)
+				billboard.ExtentsOffset = Vector3.new(0, 2, 0)
+				billboard.AlwaysOnTop = true
+				
+				local text =  Instance.new("TextLabel", billboard)         
+				text.Size = UDim2.new(1,0,1,0)
+				text.TextScaled = true
+				text.BackgroundTransparency = 1
+				text.Font = Enum.Font.Code
+				text.FontFace.Bold = true
+				
+				local stroke = Instance.new("UIStroke", text)
+				stroke.Thickness = 2
+				stroke.Color = Color3.fromRGB(0,0,0)
+
+				local newHighlight = Instance.new("Highlight", v.Character)
+				newHighlight.Name = "esp"
+				newHighlight.FillColor = Color3.fromRGB(196,196,196)
+				newHighlight.OutlineColor = Color3.fromRGB(0,0,0)
+			end
+		end
+	end
+	
+	local function ForceCreate(Part)
+		local part = workspace:FindFirstChild(Part,true)
+		if part and not part:FindFirstChild("ForcedESP") then
+			local billboard = Instance.new("BillboardGui", part)
+			billboard.Name = "ForcedESP"
+			billboard.Size = UDim2.new(4,0,1,0)
+			billboard.ExtentsOffset = Vector3.new(0, 2, 0)
+			billboard.AlwaysOnTop = true
+
+			local text =  Instance.new("TextLabel", billboard)     
+			text.Size = UDim2.new(1,0,1,0)
+			text.TextScaled = true
+			text.BackgroundTransparency = 1
+			text.Font = Enum.Font.Code
+			text.FontFace.Bold = true
+			text.TextColor3 = Color3.fromRGB(181, 53, 255)
+			
+			text.Text = Part
+
+			local stroke = Instance.new("UIStroke", text)
+			stroke.Thickness = 2
+			stroke.Color = Color3.fromRGB(0,0,0)
+
+			local newHighlight = Instance.new("Highlight", part)
+			newHighlight.Name = "ForcedEsp"
+			newHighlight.FillColor = Color3.fromRGB(181, 53, 255)
+			newHighlight.FillTransparency = 0
+			newHighlight.OutlineColor = Color3.fromRGB(181, 53, 255)
+			newHighlight.OutlineTransparency = 1
+		end
+	end
+	
+	local function UpdateLabel()
+		local PlayerRoles = event:InvokeServer()
+		for i, v in Players:GetPlayers() do
+			if (v ~= player and v.Character and v.Character:FindFirstChild("Head")) and v.Character:WaitForChild("Head"):FindFirstChild("espUser") and v.Character:FindFirstChild("esp") then
+				local billboard = v.Character:WaitForChild("Head"):FindFirstChild("espUser")
+				if not billboard then continue end
+				
+				local text =  billboard.TextLabel
+				local highlight : Highlight = v.Character:WaitForChild("esp")
+				
+				text.Text = v.Name
+				
+				local playerRole = PlayerRoles[v.Name]
+				
+				if playerRole then
+					module.Global.Roles[v.Name] = playerRole.Role
+					local ROLE = playerRole.Role
+					if ROLE == "Sheriff" and IsAlive(playerRole) then
+						text.TextColor3 = Color3.fromRGB(0, 0, 225)
+						highlight.FillColor = Color3.fromRGB(0,0,255)
+					end
+
+					if ROLE == "Murderer" and IsAlive(playerRole) then
+						text.TextColor3 = Color3.fromRGB(225, 0, 0)
+						highlight.FillColor = Color3.fromRGB(255,0,0)
+					end
+
+					if ROLE == "Innocent" and IsAlive(playerRole) then 
+						text.TextColor3 = Color3.fromRGB(0, 225, 0)
+						highlight.FillColor = Color3.fromRGB(0,255,0)
+					end 
+
+					if ROLE == "Hero" and IsAlive(playerRole) then
+						text.TextColor3 = Color3.fromRGB(255, 225, 0)
+						highlight.FillColor = Color3.fromRGB(255,255,0)
+					end
+				end
+			end
+		end
+	end
+
+	local function ClearAll()
+		for i, v in Players:GetPlayers() do
+			if (v ~= player and v.Character and v.Character:FindFirstChild("Head")) and v.Character:WaitForChild("Head"):FindFirstChild("espUser") and v.Parent then
+				v.Character:WaitForChild("Head"):FindFirstChild("espUser"):Destroy()
+				if v.Character:FindFirstChild("esp") then
+					v.Character:FindFirstChild("esp"):Destroy()
+				end
+			end
+		end
+	end
+	
+	local function clearCustom()
+		for i, v in workspace:GetDescendants() do
+			if not v:IsA("Highlight") then continue end
+			if v.Name == "ForcedEsp" then
+				local billboard = v.Parent:FindFirstChild("ForcedESP")
+				if billboard then
+					billboard:Destroy()
+				end
+				v:Destroy()
+			end
+		end
+	end
+	
+	local runRate = 0.5
+	local counter = 0
+	local loop
+	loop = RunService.Heartbeat:Connect(function(dT)
+		counter += dT
+		if counter >= runRate then
+			counter = 0
+			
+			local playerEsp = module.Global.espToggle
+			local gunDropEsp = module.Global.gunDropToggle
+			
+			if playerEsp then
+				CreateLabel()
+				UpdateLabel()
+			else
+				ClearAll()
+			end
+			
+			if gunDropEsp then
+				ForceCreate("GunDrop")
+			else
+				clearCustom()
+			end
+		end
+	end)
+end
+
+module.unsafeAutofarmToggle = function(toggle)
+	local humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+	if humanoid then
+		if toggle then
+			module.Global.noclip = true
+			workspace.Gravity = 0
+			humanoid.PlatformStand = true
+		else
+			module.Global.noclip = false
+			workspace.Gravity = 196.2
+			humanoid.PlatformStand = false
+		end
+	end
+end
+
+module.unsafeAutofarmFuncl = function()
+
+	local LOCKED_Y = nil
+	local canReset = true
+
+	local SPEED = 20
+
+	local NO_COIN_TIMEOUT = 5
+	local lastCoinSeen = os.clock()
+
+	local char = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+
+	local humanoid = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+
+	game["Run Service"].Stepped:Connect(function()
+		if module.Global.noclip then
+			for _, v in game.Players.LocalPlayer.Character:GetDescendants() do
+				if v:IsA("BasePart") then
+					v.CanCollide = false
+				end
+			end
+		end
+	end)
+
+
+	local function getClosestCoin(root)
+		local closestCoin = nil
+		local closestDist = math.huge
+
+		local CoinContainer = workspace:FindFirstChild("CoinContainer", true)
+
+		if CoinContainer then
+			for _, v in CoinContainer:GetChildren() do
+				local coin = v:FindFirstChild("CoinVisual")
+				if coin and coin:FindFirstChild("MainCoin") then
+					if coin.MainCoin.Transparency == 0 then
+						local dist = (coin.Position - root.Position).Magnitude
+						if dist < closestDist then
+							closestDist = dist
+							closestCoin = coin
+						end
+					end
+				end
+			end
+		end
+
+		return closestCoin, closestDist
+	end
+
+		task.spawn(function()
+		while task.wait(0.2) do
+			if module.Global.unsafe_coinAutofarm then
+				local char = game.Players.LocalPlayer.Character
+				if char and char.Parent and char:FindFirstChild("Humanoid") then
+					local humanoid = char:WaitForChild("Humanoid")
+					local root = char.PrimaryPart
+
+
+					local coinVisual, distance = getClosestCoin(root)
+					local coin = nil
+
+					if coinVisual then
+						if coinVisual.Parent then
+							if coinVisual:FindFirstChild("MainCoin") then
+								coin = coinVisual.Parent
+							end
+						end
+					end
+
+					if not coinVisual or not coinVisual.Parent then
+
+						if os.clock() - lastCoinSeen < NO_COIN_TIMEOUT then
+							continue
+						else
+							if canReset then
+								module.Global.noclip = false
+								humanoid.PlatformStand = false
+								workspace.Gravity = 196.2
+								humanoid.Health = 0
+								canReset = false
+							end
+						end
+					else
+						canReset = true
+						lastCoinSeen = os.clock()
+						module.Global.noclip = true
+						humanoid.PlatformStand = true
+						workspace.Gravity = 0
+					end
+
+
+					lastCoinSeen = os.clock()
+
+					if coin and coin.Parent then
+
+						if not LOCKED_Y then
+							LOCKED_Y = root.Position.Y
+						end
+
+						local targetY = coin.Position.Y - (coin.Size.Y / 2) - 2
+						if math.abs(targetY - LOCKED_Y) > 0.1 then
+							LOCKED_Y = targetY -- move Y to coin's Y
+						end
+						local targetCFrame =
+							CFrame.new(coin.Position.X, LOCKED_Y, coin.Position.Z) *
+							CFrame.Angles(math.rad(90), 0, 0)
+
+						while true do
+							local dt = task.wait(0.01)
+
+							if not coinVisual or not coinVisual.Parent then
+								break
+							end
+
+							if coinVisual:FindFirstChild("MainCoin") then
+								if coinVisual.MainCoin.Transparency ~= 0 then
+									break
+								end
+							end
+
+							if not module.Global.unsafe_coinAutofarm then
+								break
+							end
+
+							local CoinContainers = workspace:FindFirstChild("CoinContainer", true)
+							if CoinContainers then
+								for _, coinAura in CoinContainers:GetChildren() do
+									if coinAura and coinAura:FindFirstChild("CoinVisual") and coinAura:FindFirstChild("CoinVisual"):FindFirstChild("MainCoin") then
+										if coinAura:FindFirstChild("CoinVisual") then
+											if coinAura.CoinVisual:FindFirstChild("MainCoin") then
+												if coinAura.CoinVisual.MainCoin.Transparency == 0 then
+													local dist = (root.Position - coinAura.Position).Magnitude
+													if dist < 5 then
+														coinAura.Position = root.Position
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+
+							local currentPos = root.Position
+							local targetPos = Vector3.new(
+								coin.Position.X,
+								LOCKED_Y,
+								coin.Position.Z
+							)
+
+							local direction = targetPos - currentPos
+							local dist = direction.Magnitude
+
+							if dist > 0 then
+								local step = math.min(SPEED * dt, dist)
+								local newPos = currentPos + direction.Unit * step
+								root.CFrame = CFrame.new(newPos) * CFrame.Angles(math.rad(90), 0, 0)
+							end
+
+							if dist < 0.5 then
+								break
+							end
+						end
+					end
+				end
+			else
+				workspace.Gravity = 196.2
+				module.Global.noclip = false
+				local char = game.Players.LocalPlayer.Character
+				if char and char:FindFirstChild("Humanoid") then
+					char.Humanoid.PlatformStand = false
+				end
+				LOCKED_Y = nil
+			end
+		end
+		end)
+end
+
+module.CoinAutofarmFuncl = function()
+	local coinInfo = script.CoinInfo
+	coinInfo.Parent = script.Parent.Parent.Parent
+
+	local TOTAL_COLLECTED = 0
+	local COINS_PER_HOUR = 0
+	local STATUS = "Waiting..."
+
+	local lastCollectTime = nil
+	local collectionIntervals = {}
+	local MAX_INTERVAL_SAMPLES = 20
+	
+	local lastCollectedTime = os.clock()
+	local STUCK_TIMEOUT = 8 
+
+	local activeCoin = nil
+	local REROUTE_MARGIN = 5
+	local REROUTE_CHECK_INTERVAL = 0.5
+	local WAYPOINT_TIMEOUT = 5
+
+	local autofarmConnection = nil
+	
+	local failedCoins = {}
+	local FAILED_COIN_COOLDOWN = 10
+	
+	local function disableControls()
+		local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+		if humanoid then
+			humanoid.WalkSpeed = 0
+			humanoid.JumpPower = 0
+		end
+	end
+
+	local function enableControls()
+		local humanoid = player.Character and player.Character:FindFirstChild("Humanoid")
+		if humanoid then
+			humanoid.WalkSpeed = 16
+			humanoid.JumpPower = 50
+		end
+	end
+
+	local function isCoinBlacklisted(coin)
+		local t = failedCoins[coin]
+		if not t then return false end
+		if os.clock() - t > FAILED_COIN_COOLDOWN then
+			failedCoins[coin] = nil
+			return false
+		end
+		return true
+	end
+
+	local function isCoinValid(coin)
+		if not coin or not coin.Parent then return false end
+		local visual = coin:FindFirstChild("CoinVisual")
+		if not visual then return false end
+		local mainCoin = visual:FindFirstChild("MainCoin")
+		if not mainCoin or mainCoin.Transparency ~= 0 then return false end
+		return true
+	end
+
+	local function getNearestCoin(hrp)
+		local coinFolder = workspace:FindFirstChild("CoinContainer", true)
+		if not coinFolder then return nil end
+
+		local nearestCoin = nil
+		local nearestDistance = math.huge
+
+		for _, coinServer in coinFolder:GetChildren() do
+			if isCoinValid(coinServer) and not isCoinBlacklisted(coinServer) then
+				local distance = (coinServer.Position - hrp.Position).Magnitude
+				if distance < nearestDistance then
+					nearestCoin = coinServer
+					nearestDistance = distance
+				end
+			end
+		end
+
+		return nearestCoin
+	end
+
+	local function updateCoinsPerHour()
+		local now = os.clock()
+		lastCollectedTime = now
+
+
+		if lastCollectTime then
+			local gap = now - lastCollectTime
+			table.insert(collectionIntervals, gap)
+
+			if #collectionIntervals > MAX_INTERVAL_SAMPLES then
+				table.remove(collectionIntervals, 1)
+			end
+		end
+
+		lastCollectTime = now
+
+		if #collectionIntervals > 0 then
+			local sum = 0
+			for _, gap in collectionIntervals do
+				sum += gap
+			end
+			local avgInterval = sum / #collectionIntervals
+
+			if avgInterval > 0 then
+				COINS_PER_HOUR = math.floor(3600 / avgInterval)
+			end
+		end
+	end
+
+	local function Collect(coin, hrp)
+		local visual = coin:FindFirstChild("CoinVisual")
+		if not visual then return end
+
+		STATUS = "Collecting..."
+
+		local startTime = os.clock()
+		local TIMEOUT = 3
+
+		while true do
+			if not isCoinValid(coin) then return end
+			if os.clock() - startTime > TIMEOUT then return end
+
+			local dist = (coin.Position - hrp.Position).Magnitude
+			if dist < 5 then
+				coin.CFrame = hrp.CFrame
+				TOTAL_COLLECTED += 1
+				updateCoinsPerHour()
+				return
+			elseif dist > 5 and dist < 10 then
+				coin.CFrame = hrp.CFrame
+				TOTAL_COLLECTED += 1
+				updateCoinsPerHour()
+				return
+			end
+
+			task.wait(0.1)
+		end
+	end
+
+	local function getPathLength(startPos, targetPos)
+		local testPath = PathfindingService:CreatePath({
+			AgentRadius = 2,
+			AgentHeight = 5,
+			AgentCanJump = true,
+			AgentCanClimb = true,
+		})
+
+		local ok = pcall(function()
+			testPath:ComputeAsync(startPos, targetPos)
+		end)
+
+		if not ok or testPath.Status ~= Enum.PathStatus.Success then
+			return math.huge
+		end
+
+		local waypoints = testPath:GetWaypoints()
+		local length = 0
+		for i = 2, #waypoints do
+			length += (waypoints[i].Position - waypoints[i - 1].Position).Magnitude
+		end
+
+		return length
+	end
+
+	local function waitForWaypoint(humanoid, hrp, coin)
+		local reached = false
+		local rerouted = false
+		local broken = false
+
+		local conn
+		conn = humanoid.MoveToFinished:Connect(function(didReach)
+			reached = true
+		end)
+
+		local startTime = os.clock()
+		local lastRerouteCheck = 0
+
+		while not reached do
+			if os.clock() - startTime > WAYPOINT_TIMEOUT then
+				broken = true
+				break
+			end
+
+			if not isCoinValid(coin) then
+				broken = true
+				break
+			end
+
+			local character = player.Character
+			local currentHrp = character and character:FindFirstChild("HumanoidRootPart")
+			if not currentHrp then
+				broken = true
+				break
+			end
+
+			if os.clock() - lastRerouteCheck >= REROUTE_CHECK_INTERVAL then
+				lastRerouteCheck = os.clock()
+				local closer = getNearestCoin(currentHrp)
+				if closer and closer ~= coin then
+					local closerPathLen = getPathLength(currentHrp.Position, closer.Position)
+					local currentPathLen = getPathLength(currentHrp.Position, coin.Position)
+					if closerPathLen < currentPathLen - REROUTE_MARGIN then
+						rerouted = true
+						break
+					end
+				end
+			end
+
+			task.wait(0)
+		end
+
+		conn:Disconnect()
+		return reached, rerouted, broken
+	end
+
+	local function navigateToCoin(coin)
+		local indicators = {}
+		local handles = nil
+
+		local success, err = pcall(function()
+			local character = player.Character
+			local hrp = character and character:FindFirstChild("HumanoidRootPart")
+			local humanoid = character and character:FindFirstChild("Humanoid")
+			if not hrp or not humanoid then return end
+
+			STATUS = "Moving..."
+
+			local newPath = PathfindingService:CreatePath({
+				AgentRadius = 1,
+				AgentHeight = 5,
+				AgentCanJump = true,
+				AgentCanClimb = true,
+			})
+
+			-- Offset target slightly above coin to avoid geometry issues
+			local targetPos = coin.Position + Vector3.new(0, 2, 0)
+			newPath:ComputeAsync(hrp.Position, targetPos)
+
+			if newPath.Status ~= Enum.PathStatus.Success then
+				
+				failedCoins[coin] = os.clock()
+				return
+			end
+
+			local waypoints = newPath:GetWaypoints()
+			local totalWaypoints = #waypoints
+			local finishedWaypoints = 0
+
+			for i, waypoint in waypoints do
+				local indicatorPart = Instance.new("Part")
+				indicatorPart.Size = Vector3.new(0.5, 0.5, 0.5)
+				indicatorPart.Anchored = true
+				indicatorPart.CanCollide = false
+				indicatorPart.Transparency = 0
+				indicatorPart.Color = Color3.new(0.388235, 1, 0.321569)
+				indicatorPart.Position = waypoint.Position
+				indicatorPart.Material = Enum.Material.Neon
+				indicatorPart.Shape = Enum.PartType.Ball
+				indicatorPart.Parent = workspace
+				indicators[i] = indicatorPart
+			end
+
+			handles = Instance.new("BoxHandleAdornment")
+			handles.Parent = coin
+			handles.Adornee = coin
+			handles.AlwaysOnTop = true
+			handles.Color3 = Color3.fromRGB(251, 255, 1)
+			handles.ZIndex = 10
+
+			local wasRerouted = false
+
+			for i, waypoint in waypoints do
+				local currentCharacter = player.Character
+				local currentHrp = currentCharacter and currentCharacter:FindFirstChild("HumanoidRootPart")
+				local currentHumanoid = currentCharacter and currentCharacter:FindFirstChild("Humanoid")
+
+				if not currentHrp or not currentHumanoid or not isCoinValid(coin) then break end
+
+				if waypoint.Action == Enum.PathWaypointAction.Jump then
+					currentHumanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				end
+
+				currentHumanoid:MoveTo(waypoint.Position)
+				local reached, rerouted, broken = waitForWaypoint(currentHumanoid, currentHrp, coin)
+
+				if indicators[i] then
+					indicators[i]:Destroy()
+					indicators[i] = nil
+				end
+
+				if rerouted or broken then
+					wasRerouted = rerouted
+					break
+				end
+
+				finishedWaypoints += 1
+			end
+
+			if not wasRerouted and finishedWaypoints == totalWaypoints then
+				local finalCharacter = player.Character
+				local finalHrp = finalCharacter and finalCharacter:FindFirstChild("HumanoidRootPart")
+				if finalHrp then
+					Collect(coin, finalHrp)
+				end
+			end
+		end)
+
+		if handles then
+			handles:Destroy()
+		end
+		for _, v in indicators do
+			if v and v.Parent then
+				v:Destroy()
+			end
+		end
+
+		if not success then
+			
+		end
+
+		STATUS = "Waiting..."
+	end
+
+	if autofarmConnection then
+		return
+	end
+
+	autofarmConnection = RunService.Heartbeat:Connect(function(dT)
+
+		if coinInfo.Visible then
+			coinInfo.Status.Text = `Status: {STATUS}`
+			coinInfo.Hour.Text = `{COINS_PER_HOUR} per hour`
+			coinInfo.Coins.Text = `Collected: {TOTAL_COLLECTED}`
+		end
+
+		if module.Global.coinAutofarm and not activeCoin then
+			coinInfo.Visible = true
+
+			local character = player.Character
+			if not character then return end
+
+			local hrp = character:FindFirstChild("HumanoidRootPart")
+			local humanoid = character:FindFirstChild("Humanoid")
+			if not hrp or not humanoid then return end
+
+			-- Stuck check
+			if os.clock() - lastCollectedTime > STUCK_TIMEOUT then
+				local nearest = getNearestCoin(hrp)
+				if nearest then
+					hrp.CFrame = nearest.CFrame + Vector3.new(0, 3, 0)
+					lastCollectedTime = os.clock()  -- reset timer
+					failedCoins = {}  -- clear blacklist since we moved
+				end
+				return
+			end
+
+			local coin = getNearestCoin(hrp)
+			if coin then
+				activeCoin = coin
+				STATUS = "Getting Coin..."
+				task.spawn(function()
+					navigateToCoin(coin)
+					activeCoin = nil
+				end)
+			else
+				STATUS = "Waiting..."
+			end
+		elseif not module.Global.coinAutofarm then
+			coinInfo.Visible = false
+		end
+	end)
+end
+
+
+
+return module
+
+end;
+};
+-- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4.LuaULoader
+local function C_2()
+local script = G2L["2"];
+	local TweenService = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local Creator = require(script.Parent.creator)
+	local Lua = require(script.Parent.Lua)
+	
+	local HUD = Creator.GetHUD()
+	local Main = HUD.Main
+	
+	HUD.Parent = game:GetService("CoreGui")
+	
+	HUD.Game.Visible = false
+	Main.Visible = true
+	
+	local AccessKey = "q"
+	local LOADED = false
+	
+	_G.HUDToggle = Enum.KeyCode.Q
+	
+	local function verifyKey(key)
+		if LOADED then return end
+		local isCorrect = key == AccessKey and true or false
+		if isCorrect then
+			LOADED = true
+			Creator.Notification("Loading Functions")
+			tweenNewLoading()
+		else
+			Creator.Notification("Incorrect Access Key!")
+		end
+	end
+	
+	local function addToggle()
+		UserInputService.InputBegan:Connect(function(input)
+			if input.KeyCode == _G.HUDToggle then
+				HUD.Game.Visible = not HUD.Game.Visible
+			end
+		end)
+	end
+	
+	function tweenNewLoading()
+		hide2()
+		Main:TweenPosition(UDim2.fromScale(.5,.5), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.25, true)
+		Main.Topbar.Main:TweenSizeAndPosition(HUD.Game.Topbar.Main.Size, HUD.Game.Topbar.Main.Position, Enum.EasingDirection.Out, Enum.EasingStyle.Back, 0.25, true)
+		task.wait(0.25)
+		Main.Visible = false
+		game:GetService("Debris"):AddItem(Main, 0.1)
+		HUD.Game.Visible = true
+		
+		addToggle()
+	end
+	
+	function hide2()
+	
+		for _, v in Main.List:GetChildren() do
+			if not v:IsA("UIListLayout") and v.Visible then
+				if v:IsA("TextLabel") then
+					TweenService:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {TextTransparency = 1}):Play()
+	
+				elseif v:IsA("TextButton") then
+					TweenService:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {TextTransparency = 1, BackgroundTransparency = 1}):Play()
+				elseif v:IsA("TextBox") then
+					TweenService:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {TextTransparency = 1, BackgroundTransparency = 1}):Play()
+				elseif v:IsA("Frame") then
+					TweenService:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {BackgroundTransparency = 1}):Play()
+				end
+			end
+			if v:IsA("UIStroke") then
+				TweenService:Create(v, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {Transparency = 1}):Play()
+			end
+		end
+	end
+	
+	function appear()
+		local hidden = {}
+	
+		local function getSortedChildren()
+			local children = {}
+	
+			for _, v in Main.List:GetChildren() do
+				if v:IsA("GuiObject") then
+					table.insert(children, v)
+				end
+			end
+	
+			table.sort(children, function(a, b)
+				return a.LayoutOrder < b.LayoutOrder
+			end)
+	
+			return children
+		end
+	
+		local function hide()
+			Main.Note2.TextTransparency = 1
+	
+			for _, v in ipairs(getSortedChildren()) do
+				if v:IsA("TextLabel") then
+					v.TextTransparency = 1
+					table.insert(hidden, v)
+	
+				elseif (v:IsA("TextButton") or v:IsA("TextBox") or v:IsA("Frame")) then
+					if v.Visible then
+						v.Visible = false
+						table.insert(hidden, v)
+					end
+				end
+			end
+		end
+	
+		local function show()
+			table.sort(hidden, function(a, b)
+				return (a.LayoutOrder or 0) < (b.LayoutOrder or 0)
+			end)
+	
+			for _, v in ipairs(hidden) do
+				if v:IsA("TextLabel") then
+					TweenService:Create(
+						v,
+						TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{TextTransparency = 0}
+					):Play()
+	
+				elseif v:IsA("TextButton") or v:IsA("TextBox") or v:IsA("Frame") then
+					v.Visible = true
+				end
+	
+				task.wait(0.3)
+			end
+	
+			TweenService:Create(
+				Main.Note2,
+				TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{TextTransparency = 0}
+			):Play()
+		end
+	
+		hide()
+		task.wait(1)
+		show()
+	end
+	
+	Creator.MakeDragable(Main)
+	Creator.MakeDragable(HUD.Game)
+	appear()
+	
+	Creator.Button(Main.List.Enter, function()
+		if Main and Main:FindFirstChild("List") then
+			verifyKey(Main.List.Key.Text)
+			Main.List.Key.Text = ""
+		end
+	end)
+	
+	local settingsTab = Creator.NewTab("settings", 70834984716385, 3)
+	Creator.NewTitle("HUD Settings", "settings")
+	
+	local keybindcallback = function(value)
+		_G.HUDToggle = Enum.KeyCode[value]
+	end
+	
+	local keybind = Creator.NewKeybind("toggle key", "settings", "Q", keybindcallback)
+	
+	Creator.Notification("Creating PK2 files...")
+	local SAVE_FOLDER = "PatchKids2"
+	if not isfolder(SAVE_FOLDER) then
+		makefolder(SAVE_FOLDER)
+		Creator.Notification("PK2 files created!")
+	else
+		Creator.Notification("PK2 files found!")
+	end
+	
+	Lua.BeginLoadingGame()
+end;
+task.spawn(C_2);
+
+return G2L["1"], require;
