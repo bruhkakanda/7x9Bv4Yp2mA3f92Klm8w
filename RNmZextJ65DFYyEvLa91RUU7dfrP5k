@@ -9,6 +9,8 @@
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
 
+local disc = true
+if disc then
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
 Title = "Invalid PatchKids V!";
@@ -17,6 +19,7 @@ Duration = 5;
 })
 
 return
+end
 
 local G2L = {};
 
