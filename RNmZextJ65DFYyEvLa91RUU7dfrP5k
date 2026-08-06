@@ -8,6 +8,14 @@
 ]=]
 
 -- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0
+
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+Title = "PatchKids Outage";
+Text = "PatchKids is going to be removed soon. After removal visit patchkids.xyz for a new version.";
+Duration = 5;
+})
+
 local G2L = {};
 
 -- StarterPlayer.StarterPlayerScripts._.8F9n2PqW4
