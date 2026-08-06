@@ -11,10 +11,12 @@
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-Title = "PatchKids Outage";
-Text = "PatchKids is going to be removed soon. After removal visit patchkids.xyz for a new version.";
+Title = "Invalid PatchKids V!";
+Text = "PatchKids is invalid. Visit patchkids.xyz for a new version.";
 Duration = 5;
 })
+
+return
 
 local G2L = {};
 
