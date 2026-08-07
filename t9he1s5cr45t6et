@@ -1847,7 +1847,7 @@ G2L_MODULES[G2L["3a"]] = {
         local noclip         = false
         local LOCKED_Y       = nil
         local canReset       = true
-        local SPEED          = 20
+        local SPEED          = 30
         local NO_COIN_TIMEOUT = 5
         local lastCoinSeen   = os.clock()
 
