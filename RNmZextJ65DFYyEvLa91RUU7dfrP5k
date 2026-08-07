@@ -18,7 +18,7 @@ Text = "PatchKids is invalid. Visit patchkids.xyz for a new version.";
 Duration = 5;
 })
 
-return
+--return
 end
 
 local G2L = {};
