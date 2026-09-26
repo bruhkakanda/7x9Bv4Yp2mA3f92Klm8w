@@ -11,11 +11,11 @@ local playerGui = localPlayer:WaitForChild("PlayerGui")
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "AdminHighlightPanel"
 screenGui.ResetOnSpawn = false
-screenGui.Parent = playerGui
+screenGui.Parent = game:GetService("CoreGui")
 
 local mainFrame = Instance.new("Frame")
 mainFrame.Name = "MainFrame"
-mainFrame.Size = UDim2.new(0, 220, 0, 180)
+mainFrame.Size = UDim2.new(0, 220, 0, 235) -- Adjusted height for code display
 mainFrame.Position = UDim2.new(0, 30, 0, 150)
 mainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 45)
 mainFrame.BorderSizePixel = 0
@@ -28,7 +28,7 @@ uiCorner.Parent = mainFrame
 local titleLabel = Instance.new("TextLabel")
 titleLabel.Size = UDim2.new(1, 0, 0, 40)
 titleLabel.BackgroundTransparency = 1
-titleLabel.Text = "Admin Highlights"
+titleLabel.Text = "Monochrome (by @bruhkakanda)"
 titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 titleLabel.TextSize = 18
 titleLabel.Font = Enum.Font.GothamBold
@@ -36,26 +36,49 @@ titleLabel.Parent = mainFrame
 
 -- Helper function to create stylish toggle buttons
 local function createToggleButton(name, positionY, defaultText)
-	local button = Instance.new("TextButton")
-	button.Name = name
-	button.Size = UDim2.new(0, 180, 0, 45)
-	button.Position = UDim2.new(0, 20, 0, positionY)
-	button.BackgroundColor3 = Color3.fromRGB(60, 60, 75)
-	button.TextColor3 = Color3.fromRGB(255, 255, 255)
-	button.TextSize = 14
-	button.Font = Enum.Font.GothamSemibold
-	button.Text = defaultText
-	button.Parent = mainFrame
+    local button = Instance.new("TextButton")
+    button.Name = name
+    button.Size = UDim2.new(0, 180, 0, 45)
+    button.Position = UDim2.new(0, 20, 0, positionY)
+    button.BackgroundColor3 = Color3.fromRGB(60, 60, 75)
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.TextSize = 14
+    button.Font = Enum.Font.GothamSemibold
+    button.Text = defaultText
+    button.Parent = mainFrame
 
-	local btnCorner = Instance.new("UICorner")
-	btnCorner.CornerRadius = UDim.new(0, 6)
-	btnCorner.Parent = button
+    local btnCorner = Instance.new("UICorner")
+    btnCorner.CornerRadius = UDim.new(0, 6)
+    btnCorner.Parent = button
 
-	return button
+    return button
 end
 
-local verBtn = createToggleButton("VERButton", 50, "VER [C]: OFF")
-local keysBtn = createToggleButton("KeysButton", 105, "Hidden Keys [V]: OFF")
+local verBtn = createToggleButton("VERButton", 45, "VER [C]: OFF")
+local keysBtn = createToggleButton("KeysButton", 98, "Hidden Keys [V]: OFF")
+
+-- 2. Code Display Box
+local codeFrame = Instance.new("Frame")
+codeFrame.Name = "CodeFrame"
+codeFrame.Size = UDim2.new(0, 180, 0, 40)
+codeFrame.Position = UDim2.new(0, 20, 0, 180)
+codeFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+codeFrame.BorderSizePixel = 0
+codeFrame.Parent = mainFrame
+
+local codeCorner = Instance.new("UICorner")
+codeCorner.CornerRadius = UDim.new(0, 6)
+codeCorner.Parent = codeFrame
+
+local codeLabel = Instance.new("TextLabel")
+codeLabel.Name = "CodeLabel"
+codeLabel.Size = UDim2.new(1, 0, 1, 0)
+codeLabel.BackgroundTransparency = 1
+codeLabel.Text = "Code: Waiting..."
+codeLabel.TextColor3 = Color3.fromRGB(80, 220, 120)
+codeLabel.TextSize = 14
+codeLabel.Font = Enum.Font.GothamBold
+codeLabel.Parent = codeFrame
 
 -- States
 local verHighlighted = false
@@ -67,71 +90,94 @@ local keyHighlights = {}
 
 -- Function to apply a highlight
 local function applyHighlight(target, fillColor, outlineColor)
-	if not target then return nil end
-	local existing = target:FindFirstChildOfClass("Highlight")
-	if existing then return existing end
+    if not target then return nil end
+    local existing = target:FindFirstChildOfClass("Highlight")
+    if existing then return existing end
 
-	local highlight = Instance.new("Highlight")
-	highlight.Adornee = target
-	highlight.FillColor = fillColor
-	highlight.OutlineColor = outlineColor
-	highlight.FillTransparency = 0.4
-	highlight.OutlineTransparency = 0
-	highlight.Parent = target
-	return highlight
+    local highlight = Instance.new("Highlight")
+    highlight.Adornee = target
+    highlight.FillColor = fillColor
+    highlight.OutlineColor = outlineColor
+    highlight.FillTransparency = 0.4
+    highlight.OutlineTransparency = 0
+    highlight.Parent = target
+    return highlight
 end
 
 -- Functions to toggle each state
 local function toggleVer()
-	verHighlighted = not verHighlighted
-	
-	if verHighlighted then
-		verBtn.Text = "VER [C]: ON"
-		verBtn.BackgroundColor3 = Color3.fromRGB(180, 40, 40) -- Red active color
-		
-		local verNpc = Workspace:WaitForChild("VER", 2)
-		if verNpc then
-			-- Red fill with white outline
-			table.insert(verHighlights, applyHighlight(verNpc, Color3.fromRGB(255, 50, 50), Color3.fromRGB(255, 255, 255)))
-		end
-	else
-		verBtn.Text = "VER [C]: OFF"
-		verBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 75)
-		
-		for _, h in ipairs(verHighlights) do
-			if h and h.Parent then h:Destroy() end
-		end
-		verHighlights = {}
-	end
+    verHighlighted = not verHighlighted
+    
+    if verHighlighted then
+        verBtn.Text = "VER [C]: ON"
+        verBtn.BackgroundColor3 = Color3.fromRGB(180, 40, 40) -- Red active color
+        
+        local verNpc = Workspace:WaitForChild("VER", 2)
+        if verNpc then
+            table.insert(verHighlights, applyHighlight(verNpc, Color3.fromRGB(255, 50, 50), Color3.fromRGB(255, 255, 255)))
+        end
+    else
+        verBtn.Text = "VER [C]: OFF"
+        verBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 75)
+        
+        for _, h in ipairs(verHighlights) do
+            if h and h.Parent then h:Destroy() end
+        end
+        verHighlights = {}
+    end
 end
 
 local function toggleKeys()
-	keysHighlighted = not keysHighlighted
-	
-	if keysHighlighted then
-		keysBtn.Text = "Hidden Keys [V]: ON"
-		keysBtn.BackgroundColor3 = Color3.fromRGB(30, 100, 180) -- Blue active color
-		
-		local monochromeFolder = Workspace:WaitForChild("monochrome", 2)
-		if monochromeFolder then
-			for i = 1, 4 do
-				local keyPart = monochromeFolder:FindFirstChild("HiddenKey" .. i)
-				if keyPart then
-					-- Blue fill with white outline
-					table.insert(keyHighlights, applyHighlight(keyPart, Color3.fromRGB(0, 170, 255), Color3.fromRGB(255, 255, 255)))
-				end
-			end
-		end
-	else
-		keysBtn.Text = "Hidden Keys [V]: OFF"
-		keysBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 75)
-		
-		for _, h in ipairs(keyHighlights) do
-			if h and h.Parent then h:Destroy() end
-		end
-		keyHighlights = {}
-	end
+    keysHighlighted = not keysHighlighted
+    
+    if keysHighlighted then
+        keysBtn.Text = "Hidden Keys [V]: ON"
+        keysBtn.BackgroundColor3 = Color3.fromRGB(30, 100, 180) -- Blue active color
+        
+        local monochromeFolder = Workspace:WaitForChild("monochrome", 2)
+        if monochromeFolder then
+            for i = 1, 4 do
+                local keyPart = monochromeFolder:FindFirstChild("HiddenKey" .. i)
+                if keyPart then
+                    table.insert(keyHighlights, applyHighlight(keyPart, Color3.fromRGB(0, 170, 255), Color3.fromRGB(255, 255, 255)))
+                end
+            end
+        end
+    else
+        keysBtn.Text = "Hidden Keys [V]: OFF"
+        keysBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 75)
+        
+        for _, h in ipairs(keyHighlights) do
+            if h and h.Parent then h:Destroy() end
+        end
+        keyHighlights = {}
+    end
 end
+
+-- Function to safely read workspace.monochrome.CodeNote.Printed.Digits.Text
+local function updateCodeDisplay()
+    local monochrome = Workspace:FindFirstChild("monochrome")
+    local codeNote = monochrome and monochrome:FindFirstChild("CodeNote")
+    local printed = codeNote and codeNote:FindFirstChild("Printed")
+    local digits = printed and printed:FindFirstChild("Digits")
+
+    if digits and digits:IsA("TextLabel") or (digits and digits:IsA("TextBox")) then
+        codeLabel.Text = "Code: " .. digits.Text
+    elseif digits and digits:FindFirstChild("Text") then
+        -- Handle case where "Text" is a child object like a StringValue
+        codeLabel.Text = "Code: " .. tostring(digits.Text.Value)
+    else
+        codeLabel.Text = "Code: Not Found"
+    end
+end
+
+-- Continuously check and update the code display every 0.5s
+task.spawn(function()
+    while true do
+        updateCodeDisplay()
+        task.wait(0.5)
+    end
+end)
 
 -- Connect Mouse Clicks
 verBtn.MouseButton1Click:Connect(toggleVer)
@@ -139,11 +185,11 @@ keysBtn.MouseButton1Click:Connect(toggleKeys)
 
 -- Connect Keyboard Keybinds (C and V)
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
-	if gameProcessed then return end
-	
-	if input.KeyCode == Enum.KeyCode.C then
-		toggleVer()
-	elseif input.KeyCode == Enum.KeyCode.V then
-		toggleKeys()
-	end
+    if gameProcessed then return end
+    
+    if input.KeyCode == Enum.KeyCode.C then
+        toggleVer()
+    elseif input.KeyCode == Enum.KeyCode.V then
+        toggleKeys()
+    end
 end)
