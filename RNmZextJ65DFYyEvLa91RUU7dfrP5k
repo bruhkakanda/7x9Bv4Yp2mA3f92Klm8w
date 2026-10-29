@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0 aaaaaaaaaaaaaaa
+-- Instances: 119 | Scripts: 1 | Modules: 3 | Tags: 0 VVVVVVVVV
 
 local disc = true
 if disc then
@@ -2363,8 +2363,8 @@ module.unsafeAutofarmFuncl = function()
 		if CoinContainer then
 			for _, v in CoinContainer:GetChildren() do
 				local coin = v:FindFirstChild("CoinVisual")
-				if coin and coin:FindFirstChild("MainCoin") then
-					if coin.MainCoin.Transparency == 0 then
+				if coin then
+					if coin.Transparency == 0 then
 						local dist = (coin.Position - root.Position).Magnitude
 						if dist < closestDist then
 							closestDist = dist
@@ -2392,7 +2392,7 @@ module.unsafeAutofarmFuncl = function()
 
 					if coinVisual then
 						if coinVisual.Parent then
-							if coinVisual:FindFirstChild("MainCoin") then
+							if coinVisual then
 								coin = coinVisual.Parent
 							end
 						end
@@ -2443,8 +2443,8 @@ module.unsafeAutofarmFuncl = function()
 								break
 							end
 
-							if coinVisual:FindFirstChild("MainCoin") then
-								if coinVisual.MainCoin.Transparency ~= 0 then
+							if coinVisual then
+								if coinVisual.Transparency ~= 0 then
 									break
 								end
 							end
@@ -2456,10 +2456,10 @@ module.unsafeAutofarmFuncl = function()
 							local CoinContainers = workspace:FindFirstChild("CoinContainer", true)
 							if CoinContainers then
 								for _, coinAura in CoinContainers:GetChildren() do
-									if coinAura and coinAura:FindFirstChild("CoinVisual") and coinAura:FindFirstChild("CoinVisual"):FindFirstChild("MainCoin") then
+									if coinAura and coinAura:FindFirstChild("CoinVisual") then
 										if coinAura:FindFirstChild("CoinVisual") then
-											if coinAura.CoinVisual:FindFirstChild("MainCoin") then
-												if coinAura.CoinVisual.MainCoin.Transparency == 0 then
+											if coinAura.CoinVisual then
+												if coinAura.CoinVisual.Transparency == 0 then
 													local dist = (root.Position - coinAura.Position).Magnitude
 													if dist < 5 then
 														coinAura.Position = root.Position
